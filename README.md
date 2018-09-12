@@ -5,6 +5,15 @@ TuiCss is a framework to create web applications using an interface based in ASC
 
 ![TuiCss](https://image.ibb.co/gdAYN9/tuiCSS.png)
 
+## Getting Started
+To use TuiCss, you have to download the TuiCss folder of the repository and import the tuicss.css to your html page using this tag:
+
+```html
+<link rel="stylesheet" href="TuiCss/tuicss.css" />
+```
+
+Don't forget to keep the images folder in the same folder of the css file because the css uses this folder as reference to get the images for some classes.
+
 ## Components
 
 This is a simple doc for the avaiable components in the framework. For more details, download the repository and run example.html to check the full code.
