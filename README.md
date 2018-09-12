@@ -207,6 +207,43 @@ This is a simple doc for the avaiable components in the framework. For more deta
 </div>
 ```
 
+### Table
+<img src="https://image.ibb.co/cN8nzp/tui_table.png" />
+
+```html
+<table class="tui-table tui-table-hover">
+    <thead>
+        <tr>
+            <td>Name</td>
+            <td>Size</td>
+            <td>MTime</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>/.mc</td>
+            <td>1024</td>
+            <td>Apr 24 01:24</td>
+        </tr>
+    </tbody>
+</table>
+```
+
+### Progress Bar
+<img src="https://image.ibb.co/moYRs9/tui_progress.png" />
+
+```html
+<!-- Determinate -->
+<div class="tui-progress">
+    <span style="width: 25%"></span>
+</div>
+
+<!-- Indeterminate -->
+<div class="tui-progress">
+    <span class="tui-indeterminate"></span>
+</div>
+```
+
 ## CSS Classes
 
 ## Credit
