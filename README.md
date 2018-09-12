@@ -56,6 +56,7 @@ This is a simple doc for the avaiable components in the framework. For more deta
 <nav class="tui-sidenav">
     <ul>
         <li>
+            <a href="#!">Open</a>
             ...
         </li>
     </ul>
@@ -71,6 +72,137 @@ This is a simple doc for the avaiable components in the framework. For more deta
         <legend>Window</legend>
         <button class="tui-fieldset-button"><span class="green-255-text">■</span></button>
         ...
+    </fieldset>
+</div>
+```
+
+### Fieldset Status Bar
+<img src="https://image.ibb.co/grD4ep/tui_fieldset_statusbar.png"/>
+
+```html
+<div class="tui-window">
+    <fieldset class="tui-window-fieldset">
+        ...
+        <div class="tui-fieldset-statusbar">Text format: UTF-8</div>
+        ...
+    </fieldset>
+</div>
+```
+
+### Buttons
+<img src="https://image.ibb.co/dqaLkU/tui_buttons.png" />
+
+```html
+<a href="#!" class="tui-button">button</a>
+<button class="tui-button">button</button>
+```
+
+### Status Bar
+<img src="https://image.ibb.co/egTHX9/tui_statusbar.png" />
+
+```html
+<div class="tui-statusbar">
+    <ul>
+        <li><a href="#!"><span class="red-168-text">F1</span> Help</a></li>
+        <li><a href="#!"><span class="red-168-text">F2</span> Shell</a></li>
+        <li><a href="#!"><span class="red-168-text">F3</span> Open</a></li>
+        <span class="tui-statusbar-divider"></span>
+        <li><a href="#!"><span class="red-168-text">F10</span> Exit</a></li>
+    </ul>
+</div>
+```
+
+### Menu List
+<img src="https://image.ibb.co/ihphX9/tui_menu_list.png" />
+
+```html
+<div class="tui-window">
+    <fieldset class="tui-window-fieldset tui-window-fieldset-no-legend tui-border-solid">
+        <ul>
+            <li class="cyan-255-hover black-255-text-hover">
+                <span class="tui-shortcut">A</span>
+                <span>Register Tables</span>
+            </li>
+            <li class="cyan-255-hover black-255-text-hover">
+                <span class="tui-shortcut">B</span>
+                <span>Quit</span>
+            </li>
+        </ul>
+    </fieldset>
+</div>
+```
+
+### Panel
+<img src="https://image.ibb.co/dapGs9/tui_panel.png" />
+
+```html
+<div class="tui-panel">
+    ...
+</div>
+```
+
+### Inputs
+<img src="https://image.ibb.co/fCRFKp/tui_inputs.png" />
+
+```html
+<!-- Input -->
+<input class="tui-input" type="text" />
+<input class="tui-input" type="number" />
+<input class="tui-input" type="email" />
+<input class="tui-input" type="password" />
+<input class="tui-input" type="color" />
+<input class="tui-input" type="date" />
+<input class="tui-input" type="datetime-local" />
+
+<!-- Select -->
+<select class="tui-input">
+    <option selected>-- SELECT --</option>
+    <option>Option 1</option>
+    <option>Option 2</option>
+    <option>Option 3</option>
+</select>
+<select class="tui-input" multiple>
+    <option>Option 1</option>
+    <option>Option 2</option>
+    <option>Option 3</option>
+</select>
+
+<!-- Checkbox -->
+<label class="tui-checkbox">
+    Checkbox
+    <input type="checkbox"/>
+    <span></span>
+</label>
+
+<!-- Radio -->
+<fieldset class="tui-input-fieldset">
+    <legend>Radios</legend>
+    <label class="tui-radio">
+        Option 1
+        <input type="radio" name="radio" checked />
+        <span></span>
+    </label>
+    <label class="tui-radio">
+        Option 2
+        <input type="radio" name="radio" />
+        <span></span>
+    </label>
+</fieldset>
+
+<!-- Textarea -->
+<textarea class="tui-input"></textarea>
+```
+
+### Window Textarea
+<img src="https://image.ibb.co/gzkxX9/tui_win_textarea.png" />
+
+```html
+<div class="tui-window">
+    <fieldset class="tui-window-fieldset">
+        <legend align="center">FILE.C</legend>
+        <button class="tui-fieldset-button"><span class="green-255-text">↑</span></button>
+        <button class="tui-fieldset-button tui-fieldset-button-left"><span class="green-255-text">■</span></button>
+        <textarea class="tui-textarea"></textarea>
     </fieldset>
 </div>
 ```
