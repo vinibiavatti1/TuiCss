@@ -1,0 +1,542 @@
+/*
+    TuiCSS - (c) Copyright 2018
+    by Vinícius Reif Biavatti
+    VBFoundation
+*/
+
+/* 168 */
+.black-168                   {background-color: rgb(0, 0, 0)!important}
+.blue-168                    {background-color: rgb(0, 0, 168)!important}
+.green-168                   {background-color: rgb(0, 168, 0)!important}
+.cyan-168                    {background-color: rgb(0, 168, 168)!important}
+.red-168                     {background-color: rgb(168, 0, 0)!important}
+.purple-168                  {background-color: rgb(168, 0, 168)!important}
+.yellow-168                  {background-color: rgb(168, 168, 0)!important}
+.white-168                   {background-color: rgb(168, 168, 168)!important}
+.black-168-text              {color: rgb(0, 0, 0)!important}
+.blue-168-text               {color: rgb(0, 0, 168)!important}
+.green-168-text              {color: rgb(0, 168, 0)!important}
+.cyan-168-text               {color: rgb(0, 168, 168)!important}
+.red-168-text                {color: rgb(168, 0, 0)!important}
+.purple-168-text             {color: rgb(168, 0, 168)!important}
+.yellow-168-text             {color: rgb(168, 168, 0)!important}
+.white-168-text              {color: rgb(168, 168, 168)!important}
+.black-168-border            {border-color: rgb(0, 0, 0)!important}
+.blue-168-border             {border-color: rgb(0, 0, 168)!important}
+.green-168-border            {border-color: rgb(0, 168, 0)!important}
+.cyan-168-border             {border-color: rgb(0, 168, 168)!important}
+.red-168-border              {border-color: rgb(168, 0, 0)!important}
+.purple-168-border           {border-color: rgb(168, 0, 168)!important}
+.yellow-168-border           {border-color: rgb(168, 168, 0)!important}
+.white-168-border            {border-color: rgb(168, 168, 168)!important}
+.black-168-hover:hover       {background-color: rgb(0, 0, 0)!important}
+.blue-168-hover:hover        {background-color: rgb(0, 0, 168)!important}
+.green-168-hover:hover       {background-color: rgb(0, 168, 0)!important}
+.cyan-168-hover:hover        {background-color: rgb(0, 168, 168)!important}
+.red-168-hover:hover         {background-color: rgb(168, 0, 0)!important}
+.purple-168-hover:hover      {background-color: rgb(168, 0, 168)!important}
+.yellow-168-hover:hover      {background-color: rgb(168, 168, 0)!important}
+.white-168-hover:hover       {background-color: rgb(168, 168, 168)!important}
+.black-168-text-hover:hover  {color: rgb(0, 0, 0)!important}
+.blue-168-text-hover:hover   {color: rgb(0, 0, 168)!important}
+.green-168-text-hover:hover  {color: rgb(0, 168, 0)!important}
+.cyan-168-text-hover:hover   {color: rgb(0, 168, 168)!important}
+.red-168-text-hover:hover    {color: rgb(168, 0, 0)!important}
+.purple-text-168-hover:hover {color: rgb(168, 0, 168)!important}
+.yellow-text-168-hover:hover {color: rgb(168, 168, 0)!important}
+.white-text-168-hover:hover  {color: rgb(168, 168, 168)!important}
+
+/* 255 */
+.black-255          {background-color: rgb(0, 0, 0)!important}
+.blue-255           {background-color: rgb(0, 0, 255)!important}
+.green-255          {background-color: rgb(0, 255, 0)!important}
+.cyan-255           {background-color: rgb(0, 255, 255)!important}
+.red-255            {background-color: rgb(255, 0, 0)!important}
+.purple-255         {background-color: rgb(255, 0, 255)!important}
+.yellow-255         {background-color: rgb(255, 255, 0)!important}
+.white-255          {background-color: rgb(255, 255, 255)!important}
+.black-255-text     {color: rgb(0, 0, 0)!important}
+.blue-255-text      {color: rgb(0, 0, 255)!important}
+.green-255-text     {color: rgb(0, 255, 0)!important}
+.cyan-255-text      {color: rgb(0, 255, 255)!important}
+.red-255-text       {color: rgb(255, 0, 0)!important}
+.purple-255-text    {color: rgb(255, 0, 255)!important}
+.yellow-255-text    {color: rgb(255, 255, 0)!important}
+.white-255-text     {color: rgb(255, 255, 255)!important}
+.black-255-border   {border-color: rgb(0, 0, 0)!important}
+.blue-255-border    {border-color: rgb(0, 0, 255)!important}
+.green-255-border   {border-color: rgb(0, 255, 0)!important}
+.cyan-255-border    {border-color: rgb(0, 255, 255)!important}
+.red-255-border     {border-color: rgb(255, 0, 0)!important}
+.purple-255-border  {border-color: rgb(255, 0, 255)!important}
+.yellow-255-border  {border-color: rgb(255, 255, 0)!important}
+.white-255-border   {border-color: rgb(255, 255, 255)!important}
+.black-255-hover:hover  {background-color: rgb(0, 0, 0)!important}
+.blue-255-hover:hover   {background-color: rgb(0, 0, 255)!important}
+.green-255-hover:hover  {background-color: rgb(0, 255, 0)!important}
+.cyan-255-hover:hover   {background-color: rgb(0, 255, 255)!important}
+.red-255-hover:hover    {background-color: rgb(255, 0, 0)!important}
+.purple-255-hover:hover {background-color: rgb(255, 0, 255)!important}
+.yellow-255-hover:hover {background-color: rgb(255, 255, 0)!important}
+.white-255-hover:hover  {background-color: rgb(255, 255, 255)!important}
+.black-255-text-hover:hover  {color: rgb(0, 0, 0)!important}
+.blue-255-text-hover:hover   {color: rgb(0, 0, 255)!important}
+.green-255-text-hover:hover  {color: rgb(0, 255, 0)!important}
+.cyan-255-text-hover:hover   {color: rgb(0, 255, 255)!important}
+.red-255-text-hover:hover    {color: rgb(255, 0, 0)!important}
+.purple-text-255-hover:hover {color: rgb(255, 0, 255)!important}
+.yellow-text-255-hover:hover {color: rgb(255, 255, 0)!important}
+.white-text-255-hover:hover  {color: rgb(255, 255, 255)!important}
+
+/* GLOBAL */
+html {
+    font-family: 'Lucida Console';
+    font-size: 18px;
+    box-sizing: border-box;
+}
+body {
+    margin: 0px;
+}
+*, *:before, *:after {
+    font-family: inherit;
+    font-size: inherit;
+    box-sizing: inherit;
+}
+ul {
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+}
+ul li {
+    list-style-type: none;
+}
+ul li a {
+    display: block;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+span {
+    margin: 0px;
+}
+hr {
+    border: none;
+    border-bottom: 2px solid rgb(255, 255, 255);
+}
+input, select, textarea {
+    width: 200px;
+}
+
+/* TUI UTILS */
+.tui-divider {
+    border-bottom: 2px solid rgb(255, 255, 255);
+    display: block;
+}
+.tui-black-divider {
+    border-bottom: 2px solid rgb(0, 0, 0);
+    display: block;
+}
+.tui-no-shadow {
+    box-shadow: none!important;
+}
+.tui-no-padding {
+    padding: 0px!important;
+}
+.tui-shadow {
+    box-shadow: 10px 10px black!important;
+}
+.tui-white-bg {
+    background-image: url("images/bg.png");
+    background-repeat: repeat;
+}
+.tui-blue-bg {
+    background-image: url("images/bg-black.png");
+    background-repeat: repeat;
+}
+.left {
+    float: left;
+}
+.right {
+    float: right;
+}
+.inline {
+    display: inline;
+}
+.block {
+    display: block;
+}
+.tui-shortcut {
+    float: right;
+}
+.tui-content {
+    padding: 10px;
+}
+
+/* NAV */
+.tui-nav {
+    width: 100%;
+    background-color: rgb(168, 168, 168);
+    padding: 0px 1px;
+    z-index: 9;
+}
+.tui-nav-fixed {
+    position: fixed;
+}
+.tui-nav ul li {
+    display: inline-block;
+    margin-left: 10px;
+    padding: 1px 3px;
+}
+.tui-nav ul li a {
+    display: block;
+}
+.tui-nav ul li:hover {
+    background-color: rgb(0, 168, 0);
+}
+
+/* STATUSBAR */
+.tui-statusbar {
+    width: 100%;
+    background-color: rgb(168, 168, 168);
+    padding: 0px 1px;
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    z-index: 9;
+}
+.tui-statusbar ul li {
+    display: inline-block;
+    margin-left: 10px;
+    padding: 1px 3px;
+}
+.tui-statusbar ul li:active {
+    background-color: rgb(0, 0, 168);
+    color: white;
+}
+.tui-statusbar .tui-statusbar-divider {
+    border-right: 2px black solid;
+    display: inline;
+    margin: 0px 3px;
+} 
+
+/* TUI INPUT */
+.tui-input {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    outline:0;
+    border: none;
+    padding: 1px;
+}
+.tui-input:focus {
+    background-color: rgb(255, 255, 0)!important;
+    color: black!important;
+}
+
+/* TUI BUTTON */
+.tui-button {
+    outline:0;
+    padding: 1px 10px;
+    background-color: rgb(0, 168, 0);
+    color: black;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    box-shadow: 10px 10px black;
+}
+.tui-button:active {
+    background-color: rgb(0, 168, 168)!important;
+    color: black!important;
+    box-shadow: none!important;
+}
+.tui-button:focus {
+    color: rgb(0, 255, 255)!important;
+}
+
+/* TUI PANEL */
+.tui-panel {
+    background-color: rgb(0, 0, 168);
+    padding: 12px;
+    display: inline-block;
+    color: white;
+    box-shadow: 6px 6px black;
+}
+
+/* TUI WINDOW */
+.tui-window {
+    background-color: rgb(0, 0, 168);
+    padding: 1px;
+    display: inline-block;
+    position: relative;
+    box-shadow: 10px 10px black;
+    color: white;
+}
+
+/* TUI FIELDSET */
+.tui-window-fieldset {
+    border: 6px white double;
+    padding: 10px;
+    background-color: inherit;
+    margin-bottom: 6px;
+}
+.tui-window-fieldset-no-legend {
+    margin-top: 6px;
+}
+.tui-input-fieldset {
+    border-top: 6px white double;
+    border-bottom: 6px white double;
+    border-left: 2px white solid;
+    border-right: 2px white solid;
+    padding: 5px;
+    background-color: inherit;
+}
+.tui-input-fieldset:hover {
+    border-color: yellow!important;
+}
+.tui-input-fieldset:hover legend {
+    color: yellow!important;
+}
+.tui-border-solid {
+    border: 2px white solid;
+}
+.tui-fieldset-button {
+    position: absolute;
+    top: 0px;
+    right: 16px;
+    color: white;
+    background-color: inherit;
+    z-index: 2;
+    border: none;
+    cursor: pointer;
+    outline:0;
+    padding: 2px;
+}
+.tui-fieldset-statusbar {
+    position: absolute;
+    bottom: 0px;
+    left: 16px;
+    color: white;
+    background-color: inherit;
+    z-index: 2;
+    padding: 2px;
+}
+.tui-fieldset-button-left {
+    left: 16px!important;
+    right: initial;
+}
+.tui-fieldset-button::before {
+    content: "[";
+}
+.tui-fieldset-button::after {
+    content: "]";
+}
+.tui-fieldset-button:active {
+    color: rgb(0, 255, 255)!important;
+}
+.tui-fieldset legend {
+    color: white;
+}
+
+/* CHECKBOX */
+.tui-checkbox {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    color: white;
+    padding-left: 30px;
+}
+.tui-checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    top: 0px;
+    left: 0px;
+}
+.tui-checkbox span {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    cursor: pointer;
+    top: 0px;
+    left: 0px;
+}
+.tui-checkbox input:checked ~ span::after {
+    content: "[√]";
+    color: rgb(0, 255, 255);
+}
+.tui-checkbox input:not(checked) ~ span::after {
+    content: "[\00a0]";
+}
+
+/* RADIO */
+.tui-radio {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    color: white;
+    padding-left: 30px;
+}
+.tui-radio input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    top: 0px;
+    left: 0px;
+}
+.tui-radio span {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    cursor: pointer;
+    top: 0px;
+    left: 0px;
+}
+.tui-radio input:checked ~ span:after {
+    content: "(•)";
+    color: rgb(0, 255, 255)!important;
+}
+.tui-radio input:not(checked) ~ span:after {
+    content: "(\00a0)";
+}
+
+/* PROGRESS BAR */
+.tui-progress {
+    display: block;
+    position: relative;
+    height: 16px;
+    width: 200px;
+    background-color: rgb(0, 168, 168);
+    overflow: hidden;
+}
+.tui-progress span {
+    position: absolute;
+    left: 0px;
+    background-color: rgb(0, 255, 255);
+    height: 16px;
+    display: inline-block;
+}
+.tui-progress .tui-indeterminate {
+    position: absolute;
+    left: 0px;
+    background-color: rgb(0, 255, 255);
+    height: 16px;
+    width: 16px;
+    display: inline-block;
+    animation: indeterminate 1s backwards;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes indeterminate {
+    from {margin-left: -10%; }
+    to {margin-left: 100%}
+}
+
+/* DROPDOWN */
+.tui-dropdown {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+.tui-dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(168, 168, 168);
+    min-width: 200px;
+    padding: 6px;
+    z-index: 9;
+}
+.tui-dropdown-content ul {
+    border: 2px black solid;
+}
+.tui-dropdown-content ul li {
+    display: block;
+    margin: 6px;
+}
+.tui-dropdown:hover > .tui-dropdown-content:first-of-type {
+    display: block;
+}
+
+/* SCROLLBAR */
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background-image: url("images/scroll.png");
+    background-repeat: repeat;
+}
+::-webkit-scrollbar-thumb {
+    background-color: rgb(0, 168, 168);
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: rgb(0, 168, 168);
+}
+
+/* SIDENAV */
+.tui-sidenav {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background-color: rgb(0, 168, 168);
+    width: 1px;
+    z-index: 10;
+    height: 100%;
+    overflow: hidden;
+}
+.tui-sidenav:hover {
+    min-width: 200px;
+    box-shadow: 10px 10px black!important;
+    padding: 6px;
+}
+.tui-sidenav ul {
+    border: 2px black solid;
+}
+.tui-sidenav ul li {
+    display: block;
+    margin: 6px;
+}
+.tui-sidenav ul li a {
+    display: block;
+}
+.tui-sidenav ul li:hover {
+    background-color: rgb(255, 255, 0);
+}
+
+/* TABLE */
+.tui-table {
+    border: 2px solid rgb(168, 168, 168);
+    padding: 5px;
+    border-collapse: collapse;
+}
+.tui-table-hover tbody tr:hover {
+    background-color: rgb(0, 168, 168);
+    color: black;
+}
+.tui-table tbody {
+    background-color: inherit;
+    color: white;
+}
+.tui-table tbody tr td {
+    border-right: 2px solid rgb(168, 168, 168);
+    padding: 0px 2px;
+}
+.tui-table thead {
+    background-color: inherit;
+    color: rgb(255, 255, 0);
+    text-align: center;
+}
+
+/* TEXTAREA */
+.tui-textarea {
+    background-color: inherit;
+    border: none;
+    padding: 0px;
+    color: rgb(255, 255, 0);
+    outline: none;
+}
+
+/* CLOCK */
+.tui-clock {
+    padding: 1px 0px;
+    margin-right: 10px;
+    float:right;
+}

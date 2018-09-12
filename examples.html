@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html lang="en" class="tui-blue-bg">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TUI</title>
+    <link rel="stylesheet" href="TuiCSS/style.css">
+</head>
+
+<body>
+
+    <!-- SIDENAV -->
+    <nav class="tui-sidenav">
+        <ul>
+            <li>
+                <a href="#!">
+                    <span class="red-168-text">O</span>pen
+                    <span class="tui-shortcut">ctrl+o</span>
+                </a>
+            </li>
+            <li>
+                <a href="#!">OS Shell</a>
+            </li>
+            <li>
+                <a href="#!">
+                    <span class="red-168-text">C</span>opy
+                    <span class="tui-shortcut">ctrl+c</span>
+                </a>
+            </li>
+            <li>
+                <a href="#!">
+                    <span class="red-168-text">P</span>aste
+                    <span class="tui-shortcut">ctrl+v</span>
+                </a>
+            </li>
+            <li>
+                <a href="#!">C<span class="red-168-text">u</span>t
+                    <span class="tui-shortcut">ctrl+x</span>
+                </a>
+            </li>
+            <div class="tui-black-divider"></div>
+            <li>
+                <a href="#!">Insert</a>
+            </li>
+            <li>
+                <a href="#!">Delete</a>
+            </li>
+            <li>
+                <a href="#!">Go...</a>
+            </li>
+            <div class="tui-black-divider"></div>
+            <li>
+                <a href="#!">
+                    <span class="red-168-text">S</span>earch
+                    <span class="tui-shortcut">ctrl+p</span>
+                </a>
+            </li>
+            <div class="tui-black-divider"></div>
+            <li>
+                <a href="#!">Exit <span class="tui-shortcut">F10</span></a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- NAV -->
+    <nav class="tui-nav tui-nav-fixed">
+        <span class="tui-clock" id="clock"></span>
+        <ul>
+            <li class="tui-dropdown">
+                <span class="red-168-text">≡</span>
+                <div class="tui-dropdown-content">
+                    <ul>
+                        <li>
+                            <a href="#!">
+                                <span class="red-168-text">R</span>epaint desktop
+                            </a>
+                        </li>
+                        <div class="tui-black-divider"></div>
+                        <li>
+                            <a href="#!">
+                                R<span class="red-168-text">e</span>load
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#!">
+                                Re<span class="red-168-text">s</span>tore
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="tui-dropdown">
+                <span class="red-168-text">F</span>ile
+                <div class="tui-dropdown-content">
+                    <ul>
+                        <li>
+                            <a href="#!">
+                                <span class="red-168-text">N</span>ew
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#!">
+                                <span class="red-168-text">O</span>pen...
+                                <span class="tui-shortcut">F3</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#!">
+                                <span class="red-168-text">S</span>ave
+                                <span class="tui-shortcut">F2</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#!">
+                                S<span class="red-168-text">a</span>ve as...
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#!">
+                                Save a<span class="red-168-text">l</span>l
+                            </a>
+                        </li>
+                        <div class="tui-black-divider"></div>
+
+                        <!-- SUBMENU EXAMPLE -->
+                        <li class="tui-dropdown">
+                            <span class="right">►</span>
+                            <span class="red-168-text">M</span>ore
+                            <div class="tui-dropdown-content">
+                                <ul>
+                                    <li>
+                                        <a href="#!">
+                                            <span class="red-168-text">C</span>hange dir...
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#!">
+                                            <span class="red-168-text">P</span>rint
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#!">
+                                            <span class="red-168-text">D</span>OS shell
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <div class="tui-black-divider"></div>
+                        <li>
+                            <a href="#!">
+                                <span class="red-168-text">Q</span>uit
+                                <span class="tui-shortcut">F10</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="tui-dropdown">
+                <span class="red-168-text">E</span>dit
+                <div class="tui-dropdown-content">
+                    <ul>
+                        <li>
+                            <a href="#!">
+                                <span class="red-168-text">C</span>opy
+                                <span class="tui-shortcut">ctrl+c</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#!">
+                                <span class="red-168-text">P</span>aste
+                                <span class="tui-shortcut">ctrl+v</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#!">C<span class="red-168-text">u</span>t
+                                <span class="tui-shortcut">ctrl+x</span>
+                            </a>
+                        </li>
+                        <div class="tui-black-divider"></div>
+                        <li>
+                            <a href="#!">Insert</a>
+                        </li>
+                        <li>
+                            <a href="#!">Delete</a>
+                        </li>
+                        <li>
+                            <a href="#!">Go...</a>
+                        </li>
+                        <div class="tui-black-divider"></div>
+                        <li>
+                            <a href="#!">
+                                <span class="red-168-text">S</span>earch
+                                <span class="tui-shortcut">ctrl+p</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="tui-dropdown">
+                <span class="red-168-text">E</span>dit Styled
+                <div class="tui-dropdown-content blue-168 white-255-text">
+                    <ul class="white-255-border">
+                        <li>
+                            <a href="#!">
+                                <span class="green-255-text">C</span>opy
+                                <span class="tui-shortcut">ctrl+c</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#!">
+                                <span class="green-255-text">P</span>aste
+                                <span class="tui-shortcut">ctrl+v</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#!">C<span class="green-255-text">u</span>t
+                                <span class="tui-shortcut">ctrl+x</span>
+                            </a>
+                        </li>
+                        <div class="tui-divider"></div>
+                        <li>
+                            <a href="#!">Insert</a>
+                        </li>
+                        <li>
+                            <a href="#!">Delete</a>
+                        </li>
+                        <li>
+                            <a href="#!">Go...</a>
+                        </li>
+                        <div class="tui-divider"></div>
+                        <li>
+                            <a href="#!">
+                                <span class="green-255-text">S</span>earch
+                                <span class="tui-shortcut">ctrl+p</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="#!"><span class="red-168-text">H</span>elp</a></li>
+        </ul>
+    </nav>
+    <br>
+
+    <!-- CONTENT -->
+    <div class="tui-content">
+
+        <!-- WINDOW EXAMPLE 1 -->
+        <div class="tui-window">
+            <fieldset class="tui-window-fieldset">
+                <legend>Window</legend>
+                <button class="tui-fieldset-button tui-fieldset-button-right"><span class="green-255-text">■</span></button>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>
+                Curabitur id vestibulum libero, id fermentum lorem.<br>
+                Aenean aliquam erat leo, eu tempus ex ornare eu.<br>
+                Sed ut lacus libero. Etiam rhoncus ipsum arcu.<br>
+                In quis bibendum libero. Donec nec egestas ipsum.<br>
+                Sed in venenatis diam. Nullam sollicitudin risus vel.<br>
+                <br>
+                <div class="tui-divider"></div>
+                <br>
+                <button class="tui-button">more...</button>
+                <button class="tui-button purple-168 white-255-text">share</button>
+            </fieldset>
+        </div><br><br>
+
+        <!-- WINDOW EXAMPLE 2 -->
+        <div class="tui-window white-168 black-255-text">
+            <fieldset class="tui-window-fieldset">
+                <legend class="white-255-text">Window</legend>
+                <div style="overflow: scroll; height: 200px; width: 400px; white-space: nowrap;">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>
+                    Curabitur id vestibulum libero, id fermentum lorem.<br>
+                    Aenean aliquam erat leo, eu tempus ex ornare eu.<br>
+                    Sed ut lacus libero. Etiam rhoncus ipsum arcu.<br>
+                    In quis bibendum libero. Donec nec egestas ipsum.<br>
+                    Sed in venenatis diam. Nullam sollicitudin risus vel.<br>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>
+                    Curabitur id vestibulum libero, id fermentum lorem.<br>
+                    Aenean aliquam erat leo, eu tempus ex ornare eu.<br>
+                    Sed ut lacus libero. Etiam rhoncus ipsum arcu.<br>
+                    In quis bibendum libero. Donec nec egestas ipsum.<br>
+                    Sed in venenatis diam. Nullam sollicitudin risus vel.<br>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>
+                    Curabitur id vestibulum libero, id fermentum lorem.<br>
+                    Aenean aliquam erat leo, eu tempus ex ornare eu.<br>
+                    Sed ut lacus libero. Etiam rhoncus ipsum arcu.<br>
+                    In quis bibendum libero. Donec nec egestas ipsum.<br>
+                    Sed in venenatis diam. Nullam sollicitudin risus vel.<br>
+                </div>
+            </fieldset>
+        </div><br><br>
+
+        <!-- WINDOW EXAMPLE 3 -->
+        <div class="tui-window cyan-168 black-255-text">
+            <fieldset class="tui-window-fieldset">
+                <legend class="white-255-text">Window</legend>
+                <span class="tui-shadow">The Lorem Ipsum </span><br><br>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>
+                Curabitur id vestibulum libero, id fermentum lorem.<br>
+                Aenean aliquam erat leo, eu tempus ex ornare eu.<br>
+                Sed ut lacus libero. Etiam rhoncus ipsum arcu.<br>
+                In quis bibendum libero. Donec nec egestas ipsum.<br>
+                Sed in venenatis diam. Nullam sollicitudin risus vel.<br>
+                <br>
+                <div class="tui-divider"></div>
+                <br>
+                <button class="tui-button white-168">accept</button>
+            </fieldset>
+        </div><br><br>
+
+        <!-- WINDOW EXAMPLE 4 -->
+        <div class="tui-window red-168">
+            <fieldset class="tui-window-fieldset">
+                <legend>Error!</legend>
+                An ERROR ocurred while processing!
+                <br><br>
+                <button class="tui-button white-168"><span class="yellow-255-text">o</span>k</button>
+            </fieldset>
+        </div><br><br>
+
+        <!-- WINDOW EXAMPLE 5 -->
+        <div class="tui-window">
+            <fieldset class="tui-window-fieldset tui-border-solid">
+                <legend align="center">Window</legend>
+                <button class="tui-fieldset-button tui-fieldset-button-left">X</button>
+                <div class="tui-fieldset-statusbar">Text format: UTF-8</div>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br> Vestibulum a posuere sapien, nec placerat
+                lorem.<br> Aliquam urna lorem, placerat et varius et, aliquam ac libero.
+                <br><br>
+                <span class="tui-divider"></span>
+                <br>Author: Lorem Ipsum<br><br>
+            </fieldset>
+        </div><br><br>
+
+        <!-- WINDOW EXAMPLE 6 -->
+        <div class="tui-window red-168">
+            <fieldset class="tui-window-fieldset tui-window-fieldset-no-legend tui-border-solid">
+                <span class="red-255 yellow-255-text">Warning! There are pendencies</span><br><br>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br> Vestibulum a posuere sapien, nec placerat
+                lorem.<br> Aliquam urna lorem, placerat et varius et, aliquam ac libero.
+            </fieldset>
+        </div><br><br>
+
+        <!-- LIST -->
+        <div class="tui-window purple-168">
+            <fieldset class="tui-window-fieldset tui-window-fieldset-no-legend tui-border-solid" style="width: 300px">
+                <ul>
+                    <li class="cyan-255-hover black-255-text-hover">
+                        <a href="#!">
+                            <span class="tui-shortcut">A</span>
+                            <span>Register Tables</span>
+                        </a>
+                    </li>
+                    <li class="cyan-255-hover black-255-text-hover">
+                        <a href="#!">
+                            <span class="tui-shortcut">B</span>
+                            <span>Register Consumers</span>
+                        </a>
+                    </li>
+                    <li class="cyan-255-hover black-255-text-hover">
+                        <a href="#!">
+                            <span class="tui-shortcut">C</span>
+                            <span>Register Companies</span>
+                        </a>
+                    </li>
+                    <li class="cyan-255-hover black-255-text-hover">
+                        <a href="#!">
+                            <span class="tui-shortcut">D</span>
+                            <span>Search Windows</span>
+                        </a>
+                    </li>
+                    <li class="cyan-255-hover black-255-text-hover">
+                        <a href="#!">
+                            <span class="tui-shortcut">E</span>
+                            <span>Quit</span>
+                        </a>
+                    </li>
+                </ul>
+            </fieldset>
+        </div><br><br>
+
+        <!-- PANEL EXAMPLE 1 -->
+        <div class="tui-panel">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br> Vestibulum a posuere sapien, nec placerat
+            lorem.<br> Aliquam urna lorem, placerat et varius et, aliquam ac libero.
+        </div><br><br>
+
+        <!-- PANEL EXAMPLE 2 -->
+        <div class="tui-panel yellow-168 black-255-text">
+            NOTE: Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br> Vestibulum a posuere sapien, nec
+            placerat
+            lorem.<br> Aliquam urna lorem, placerat et varius et, aliquam ac libero.
+        </div><br><br>
+
+        <!-- INPUTS -->
+        <div class="tui-window">
+            <fieldset class="tui-window-fieldset">
+                <legend>Inputs</legend>
+                TEXT:<br><input class="tui-input" /><br>
+                NUMBER:<br><input class="tui-input" type="number" /><br>
+                DATE:<br><input class="tui-input" type="date" /><br>
+                DATETIME:<br><input class="tui-input" type="datetime-local" /><br>
+                PASSWORD:<br><input class="tui-input" type="password" /><br>
+                SELECT:<br>
+                <select class="tui-input">
+                    <option selected>-- SELECT --</option>
+                    <option>Option 1</option>
+                    <option>Option 2</option>
+                    <option>Option 3</option>
+                </select>
+                <fieldset class="tui-input-fieldset">
+                    <legend>Checkboxes</legend>
+                    <label class="tui-checkbox">One
+                        <input type="checkbox" checked />
+                        <span></span>
+                    </label>
+                    <label class="tui-checkbox">Second
+                        <input type="checkbox" />
+                        <span></span>
+                    </label>
+                </fieldset>
+                <fieldset class="tui-input-fieldset">
+                    <legend>Radios</legend>
+                    <label class="tui-radio">One
+                        <input type="radio" name="radio" checked />
+                        <span></span>
+                    </label>
+                    <label class="tui-radio">Second
+                        <input type="radio" name="radio" />
+                        <span></span>
+                    </label>
+                    <label class="tui-radio">Third
+                        <input type="radio" name="radio" />
+                        <span></span>
+                    </label>
+                </fieldset>
+                TEXTAREA:<br>
+                <textarea class="tui-input"></textarea><br>
+                COLOR:<br>
+                <input class="tui-input" type="color" /><br>
+                MULTIPLE:<br>
+                <select class="tui-input" multiple>
+                    <option selected>-- SELECT --</option>
+                    <option>Option 1</option>
+                    <option>Option 2</option>
+                    <option>Option 3</option>
+                    <option>Option 4</option>
+                    <option>Option 5</option>
+                </select>
+            </fieldset>
+        </div><br><br>
+
+        <!--PROGRESS -->
+        <div class="tui-window">
+            <fieldset class="tui-window-fieldset">
+                <legend>Progress</legend>
+                0%
+                <div class="tui-progress">
+                    <span style="width: 0%"></span>
+                </div>
+                25%
+                <div class="tui-progress">
+                    <span style="width: 25%"></span>
+                </div>
+                50%
+                <div class="tui-progress">
+                    <span style="width: 50%"></span>
+                </div>
+                75%
+                <div class="tui-progress">
+                    <span style="width: 75%"></span>
+                </div>
+                100%
+                <div class="tui-progress">
+                    <span style="width: 100%"></span>
+                </div>
+                Indeterminate
+                <div class="tui-progress">
+                    <span class="tui-indeterminate"></span>
+                </div>
+                Custom
+                <div class="tui-progress red-255">
+                    <span class="green-255" style="width: 75%"></span>
+                </div>
+            </fieldset>
+        </div><br><br>
+
+        <!-- TABLE -->
+        <div class="tui-window">
+            <fieldset class="tui-window-fieldset">
+                <legend>Table</legend>
+                <table class="tui-table tui-table-hover" style="width: 600px">
+                    <thead>
+                        <tr>
+                            <td>Name</td>
+                            <td>Size</td>
+                            <td>MTime</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>/.mc</td>
+                            <td>1024</td>
+                            <td>Apr 24 01:24</td>
+                        </tr>
+                        <tr>
+                            <td>/bin</td>
+                            <td>3072</td>
+                            <td>Jun 12 11:01</td>
+                        </tr>
+                        <tr>
+                            <td>/boot</td>
+                            <td>1024</td>
+                            <td>Apr 24 01:24</td>
+                        </tr>
+                        <tr>
+                            <td>~cdrom</td>
+                            <td>256</td>
+                            <td>May 24 01:24</td>
+                        </tr>
+                        <tr>
+                            <td>/disk</td>
+                            <td>10258</td>
+                            <td>May 12 11:01</td>
+                        </tr>
+                        <tr>
+                            <td>/win32</td>
+                            <td>4056</td>
+                            <td>Apr 24 01:24</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </fieldset>
+        </div><br><br>
+
+        <!-- CALCULATOR EXAMPLE -->
+        <div class="tui-window white-168">
+            <fieldset class="tui-window-fieldset">
+                <legend align="center">Pocket Calculator</legend>
+                <input class="tui-input blue-168 white-255-text" style="text-align: right;" disabled value="872.9000" />
+                <br><br>
+                <button class="tui-button">C&nbsp;</button>
+                <button class="tui-button">&#60;-</button>
+                <button class="tui-button">%&nbsp;</button>
+                <button class="tui-button">+-</button><br><br>
+                <button class="tui-button">7&nbsp;</button>
+                <button class="tui-button">8&nbsp;</button>
+                <button class="tui-button">9&nbsp;</button>
+                <button class="tui-button">/&nbsp;</button><br><br>
+                <button class="tui-button">4&nbsp;</button>
+                <button class="tui-button">5&nbsp;</button>
+                <button class="tui-button">6&nbsp;</button>
+                <button class="tui-button">*&nbsp;</button><br><br>
+                <button class="tui-button">1&nbsp;</button>
+                <button class="tui-button">2&nbsp;</button>
+                <button class="tui-button">3&nbsp;</button>
+                <button class="tui-button">-&nbsp;</button><br><br>
+                <button class="tui-button">0&nbsp;</button>
+                <button class="tui-button">.&nbsp;</button>
+                <button class="tui-button">=&nbsp;</button>
+                <button class="tui-button">+&nbsp;</button>
+            </fieldset>
+        </div><br><br>
+
+        <!-- WINDOW TEXTAREA -->
+        <div class="tui-window">
+            <fieldset class="tui-window-fieldset">
+                <legend align="center">MYAPP.CPP</legend>
+                <button class="tui-fieldset-button"><span class="green-255-text">↑</span></button>
+                <button class="tui-fieldset-button tui-fieldset-button-left"><span class="green-255-text">■</span></button>
+                <textarea class="tui-textarea" style="width: 400px; height: 200px;">#include &#60;iostream&#62;
+using namespace std;
+
+int main() 
+{
+    cout &#60;&#60; "Hello, World!";
+    return 0;
+}</textarea>
+            </fieldset>
+        </div><br><br>
+
+        <!--HELP -->
+        <div class="tui-window">
+            <fieldset class="tui-window-fieldset tui-window-fieldset-no-legend yellow-255-border">
+                <br><br>
+                <center>
+                    TuiCSS<br><br>
+                    Version: 0.1.0<br>
+                    Copyright (c) 2018 by VBFoundation
+                </center>
+                <br><br>
+            </fieldset>
+        </div><br><br>
+
+        <!--REGISTER EXAMPLE 1 -->
+        <div class="tui-window white-168">
+            <fieldset class="tui-window-fieldset black-255-text">
+                <legend align="center" class="white-255-text">Register / 106</legend>
+                <div style="display: inline-block; width: 500px">
+                    <span class="yellow-255-text">N</span>umber.....:
+                    <input style="width: 100px" class="tui-input blue-168" type="number" value="106" /><br>
+                    <span class="yellow-255-text">D</span>ocument...:
+                    <input style="width: 150px" class="tui-input blue-168" value="1.504.00.1-00" /><br>
+                    <span class="yellow-255-text">F</span>irst Name.:
+                    <input style="width: 250px" class="tui-input blue-168" value="Robert" /><br>
+                    <span class="yellow-255-text">S</span>econd Name:
+                    <input style="width: 250px" class="tui-input blue-168" value="Munique Steffens" /><br>
+                    <span class="yellow-255-text">C</span>ity.......:
+                    <input style="width: 150px" class="tui-input blue-168" value="Blumenau" /><br>
+                    S<span class="yellow-255-text">t</span>ate......:
+                    <input style="width: 50px" class="tui-input blue-168" value="SC" /><br>
+                    C<span class="yellow-255-text">o</span>ntry.....:
+                    <input style="width: 100px" class="tui-input blue-168" value="Brazil" /><br><br>
+                    P<span class="yellow-255-text">h</span>one......:
+                    <input style="width: 200px" class="tui-input blue-168" value="(47) 3 3784-2134" /><br>
+                    F<span class="yellow-255-text">a</span>x........:
+                    <input style="width: 200px" class="tui-input blue-168" value="" /><br>
+                    E<span class="yellow-255-text">m</span>ail......:
+                    <input style="width: 250px" class="tui-input blue-168" value="robert@email.com" /><br><br>
+                    <span class="yellow-255-text">G</span>roup......:
+                    <select class="tui-input blue-168">
+                        <option>Awner</option>
+                        <option>Administrators</option>
+                        <option>Common Users</option>
+                    </select>
+                </div>
+                <div style="display: inline-block; width: 200px; vertical-align: top">
+                    <span>Locale</span>
+                    <div class="cyan-168">
+                        <label class="tui-radio black-255-text"> en-US
+                            <input type="radio" name="locale" checked>
+                            <span></span>
+                        </label>
+                        <label class="tui-radio black-255-text"> pt-BR
+                            <input type="radio" name="locale">
+                            <span></span>
+                        </label>
+                        <label class="tui-radio black-255-text"> ch-CH
+                            <input type="radio" name="locale">
+                            <span></span>
+                        </label>
+                        <label class="tui-radio black-255-text"> none
+                            <input type="radio" name="locale">
+                            <span></span>
+                        </label>
+                    </div>
+                    <div class="right">
+                        <span>...Cod:</span><input style="width: 30px" class="tui-input blue-168">
+                    </div>
+                    <br><br>
+                    <span>Currency</span>
+                    <div class="cyan-168 black-255-text">
+                        <label class="tui-radio black-255-text"> USD
+                            <input type="radio" name="currency" checked>
+                            <span></span>
+                        </label>
+                        <label class="tui-radio black-255-text"> R$
+                            <input type="radio" name="currency">
+                            <span></span>
+                        </label>
+                        <label class="tui-radio black-255-text"> none
+                            <input type="radio" name="currency">
+                            <span></span>
+                        </label>
+                    </div>
+                    <br>
+                    Registered at: 11/09/2018 12:50:15
+                </div>
+                <br><br>
+                <button class="tui-button"><span class="yellow-255-text">n</span>ew</button>
+                <button class="tui-button"><span class="yellow-255-text">d</span>el</button>
+                <button class="tui-button"><span class="yellow-255-text">s</span>earch</button>
+                <button class="tui-button"><span class="yellow-255-text">l</span>ist</button>
+                <button class="tui-button"><span class="yellow-255-text">r</span>eports</button>
+                <br><br>
+            </fieldset>
+        </div><br><br>
+
+        <!--REGISTER EXAMPLE 2 -->
+        <div class="tui-window">
+            <fieldset class="tui-window-fieldset">
+                <legend align="center" class="white-255-text">Register / 106</legend>
+                <div style="display: inline-block; width: 500px">
+                    <span class="yellow-255-text">N</span>umber.....:
+                    <input style="width: 100px" class="tui-input" type="number" value="106" /><br>
+                    <span class="yellow-255-text">D</span>ocument...:
+                    <input style="width: 150px" class="tui-input" value="1.504.00.1-00" /><br>
+                    <span class="yellow-255-text">F</span>irst Name.:
+                    <input style="width: 250px" class="tui-input" value="Robert" /><br>
+                    <span class="yellow-255-text">S</span>econd Name:
+                    <input style="width: 250px" class="tui-input" value="Munique Steffens" /><br>
+                    <span class="yellow-255-text">C</span>ity.......:
+                    <input style="width: 150px" class="tui-input" value="Blumenau" /><br>
+                    S<span class="yellow-255-text">t</span>ate......:
+                    <input style="width: 50px" class="tui-input" value="SC" /><br>
+                    C<span class="yellow-255-text">o</span>ntry.....:
+                    <input style="width: 100px" class="tui-input" value="Brazil" /><br><br>
+                    P<span class="yellow-255-text">h</span>one......:
+                    <input style="width: 200px" class="tui-input" value="(47) 3 3784-2134" /><br>
+                    F<span class="yellow-255-text">a</span>x........:
+                    <input style="width: 200px" class="tui-input" value="" /><br>
+                    E<span class="yellow-255-text">m</span>ail......:
+                    <input style="width: 250px" class="tui-input" value="robert@email.com" /><br><br>
+                    <span class="yellow-255-text">G</span>roup......:
+                    <select class="tui-input">
+                        <option>Awner</option>
+                        <option>Administrators</option>
+                        <option>Common Users</option>
+                    </select>
+                </div>
+                <div style="display: inline-block; width: 200px; vertical-align: top">
+                    <span>Locale</span>
+                    <div class="cyan-168">
+                        <label class="tui-radio black-255-text"> en-US
+                            <input type="radio" name="locale" checked>
+                            <span></span>
+                        </label>
+                        <label class="tui-radio black-255-text"> pt-BR
+                            <input type="radio" name="locale">
+                            <span></span>
+                        </label>
+                        <label class="tui-radio black-255-text"> ch-CH
+                            <input type="radio" name="locale">
+                            <span></span>
+                        </label>
+                        <label class="tui-radio black-255-text"> none
+                            <input type="radio" name="locale">
+                            <span></span>
+                        </label>
+                    </div>
+                    <div class="right">
+                        <span>...Cod:</span><input style="width: 30px" class="tui-input blue-168">
+                    </div>
+                    <br><br>
+                    <span>Currency</span>
+                    <div class="cyan-168 black-255-text">
+                        <label class="tui-radio black-255-text"> USD
+                            <input type="radio" name="currency" checked>
+                            <span></span>
+                        </label>
+                        <label class="tui-radio black-255-text"> R$
+                            <input type="radio" name="currency">
+                            <span></span>
+                        </label>
+                        <label class="tui-radio black-255-text"> none
+                            <input type="radio" name="currency">
+                            <span></span>
+                        </label>
+                    </div>
+                    <br>
+                    Registered at: 11/09/2018 12:50:15
+                </div>
+                <br><br>
+                <button class="tui-button"><span class="yellow-255-text">n</span>ew</button>
+                <button class="tui-button"><span class="yellow-255-text">d</span>el</button>
+                <button class="tui-button"><span class="yellow-255-text">s</span>earch</button>
+                <button class="tui-button"><span class="yellow-255-text">l</span>ist</button>
+                <button class="tui-button"><span class="yellow-255-text">r</span>eports</button>
+                <br><br>
+            </fieldset>
+        </div><br><br>
+
+        <!-- STATUSBAR -->
+        <div class="tui-statusbar">
+            <ul>
+                <li><a href="#!"><span class="red-168-text">F1</span> Help</a></li>
+                <li><a href="#!"><span class="red-168-text">F2</span> Shell</a></li>
+                <li><a href="#!"><span class="red-168-text">F3</span> Open</a></li>
+                <span class="tui-statusbar-divider"></span>
+                <li><a href="#!"><span class="red-168-text">F10</span> Exit</a></li>
+            </ul>
+        </div><br><br>
+
+    </div>
+    <br><br>
+
+</body>
+<script>
+    window.onload = function () {
+        setInterval(function () {
+            var today = new Date();
+            var clock = document.getElementById("clock");
+            var hour = (today.getHours() + "").length == 2 ? today.getHours() : "0" + today.getHours();
+            var minute = (today.getMinutes() + "").length == 2 ? today.getMinutes() : "0" + today.getMinutes();
+            var second = (today.getSeconds() + "").length == 2 ? today.getSeconds() : "0" + today.getSeconds();
+            clock.innerHTML = hour + ":" + minute + ":" + second;
+        });
+    };
+</script>
+
+</html>
