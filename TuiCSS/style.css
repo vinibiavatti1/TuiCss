@@ -333,9 +333,6 @@ input, select, textarea {
 .tui-fieldset-button:active {
     color: rgb(0, 255, 255)!important;
 }
-.tui-fieldset legend {
-    color: white;
-}
 
 /* CHECKBOX */
 .tui-checkbox {
