@@ -245,8 +245,47 @@ This is a simple doc for the avaiable components in the framework. For more deta
 ```
 
 ## CSS Classes
+| Class | Description |
+| --- | --- |
+| `.tui-divider` | Create a white bottom divider |
+| `.tui-black-divider` | Create a black bottom divider |
+| `.tui-no-shadow` | Remove the shadow |
+| `.tui-no-padding` | Remove padding |
+| `.tui-shadow` | Create a shadow in the element |
+| `.tui-white-bg` | Used in html tag to create a white 168 dot background |
+| `.tui-blue-bg` | Used in html tag to create a blue 168 dot background |
+| `.left` | Quick left float |
+| `.right` | Quick right float |
+| `.inline` | Quick inline display |
+| `.block` | Quick block display |
+| `.tui-shortcut` | Used in lists to put some text like shortcuts on the right side of the main text |
+| `.tui-content` | Put a default padding in the container |
+| `.tui-nav` | Create a navbar |
+| `.tui-nav-fixed` | Change the navbar to a fixed position |
+| `.tui-statusbar` | Create a Status Bar |
+| `.tui-input` | Create a TUI theme input like inputs, selects, textareas... |
+| `.tui-button` | Create a TUI button. It can be used to a, buttons, input[type="button"] |
+| `.tui-panel` | Create a TUI panel |
+| `.tui-window` | Create a TUI window |
+| `.tui-window-fieldset` | Put the border for the TUI window |
+| `.tui-input-fieldset` | Used to create a container for the inputs like checkboxes and radios |
+| `.tui-border-solid` | Change the border like fieldset borders to a solid border |
+| `.tui-fieldset-button` | Create a action button in the fieldset like buttons to close, minimize, maximize... |
+| `.tui-fieldset-button-left` | Change the position of the fieldset button to the left side |
+| `.tui-fieldset-statusbar` | Create a bottom status bar in the fieldset |
+| `.tui-checkbox` | Create TUI checkbox |
+| `.tui-radio` | Create TUI radio |
+| `.tui-progress` | Create a TUI progress bar |
+| `.tui-indeterminate` | Set the progress bar to indeterminate property |
+| `.tui-dropdown` | Create a menu dropdown. It can be used to the navbar itens, buttons... |
+| `.tui-dropdown-content` | The content that will be displayed for the dropdown |
+| `.tui-sidenav` | Create a left sidenav. To active, just move the cursor for the left side of the screen |
+| `.tui-table` | Create a table |
+| `.tui-table-hover` | Add an hover effect for the table rows |
+| `.tui-textarea` | Create a textarea without background |
+| `.tui-clock` | Create a clock space in the navbar |
 
 ## Credit
-TuiCss Framework (c) Copyright 2018
-by Vinícius Reif Biavatti
+TuiCss Framework (c) Copyright 2018<br>
+by Vinícius Reif Biavatti<br>
 VBFoundation
