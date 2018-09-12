@@ -262,7 +262,8 @@ This is a simple doc for the avaiable components in the framework. For more deta
 | `.tui-content` | Put a default padding in the container |
 | `.tui-nav` | Create a navbar |
 | `.tui-nav-fixed` | Change the navbar to a fixed position |
-| `.tui-statusbar` | Create a Status Bar |
+| `.tui-statusbar` | Create a status bar |
+| `.tui-statusbar-divider` | Put a vertical divider in the status bar |
 | `.tui-input` | Create a TUI theme input like inputs, selects, textareas... |
 | `.tui-button` | Create a TUI button. It can be used to a, buttons, input[type="button"] |
 | `.tui-panel` | Create a TUI panel |
