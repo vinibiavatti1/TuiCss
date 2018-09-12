@@ -285,8 +285,31 @@ This is a simple doc for the avaiable components in the framework. For more deta
 | `.tui-textarea` | Create a textarea without background |
 | `.tui-clock` | Create a clock space in the navbar |
 
-## CSS Color Classes
+## CSS Colors
+| Colors |
+| --- |
+| `black` | 
+| `blue` | 
+| `green` | 
+| `cyan` | 
+| `red` | 
+| `purple` | 
+| `yellow` | 
+| `white` |
 
+## CSS Color Classes
+| Class | Description |
+| --- | --- |
+| `.<color>-168` | Change the background color to a specified color name with value 168 |
+| `.<color>-255` | Change the background color to a specified color name with value 255 |
+| `.<color>-168-text` | Change the foreground color to a specified color name with value 168 |
+| `.<color>-255-text` | Change the foreground color to a specified color name with value 255 |
+| `.<color>-168-border` | Change the border color to a specified color name with value 168 |
+| `.<color>-255-border` | Change the border color to a specified color name with value 255 |
+| `.<color>-168-hover` | Change the background color to a specified color name with value 168 on mouse hover |
+| `.<color>-255-hover` | Change the background color to a specified color name with value 255 on mouse hover |
+| `.<color>-168-text-hover` | Change the foreground color to a specified color name with value 168 on mouse hover |
+| `.<color>-255-text-hover` | Change the foreground color to a specified color name with value 255 on mouse hover | 
 
 ## Credit
 TuiCss Framework (c) Copyright 2018<br>
