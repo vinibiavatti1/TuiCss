@@ -155,16 +155,16 @@ input, select, textarea {
     background-repeat: repeat;
 }
 .left {
-    float: left;
+    float: left!important;
 }
 .right {
-    float: right;
+    float: right!important;
 }
 .inline {
-    display: inline;
+    display: inline!important;
 }
 .block {
-    display: block;
+    display: block!important;
 }
 .tui-shortcut {
     float: right;
