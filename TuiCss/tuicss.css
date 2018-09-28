@@ -235,6 +235,7 @@ input, select, textarea {
 
 /* TUI BUTTON */
 .tui-button {
+	display: inline-block;
     outline:0;
     padding: 1px 10px;
     background-color: rgb(0, 168, 0);
