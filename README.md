@@ -296,16 +296,16 @@ This is a simple doc for the avaiable components in the framework. For more deta
 | `.tui-clock` | Create a clock space in the navbar |
 
 ## CSS Colors
-| Colors |
-| --- |
-| `black` | 
-| `blue` | 
-| `green` | 
-| `cyan` | 
-| `red` | 
-| `purple` | 
-| `yellow` | 
-| `white` |
+| Colors | 168 Value | 255 Value |
+| --- | --- | --- |
+| `black` |  `rgb(0, 0, 0)` | `rgb(0, 0, 0)` |
+| `blue` | `rgb(0, 0, 168)` | `rgb(0, 0, 255)` |
+| `green` | `rgb(0, 168, 0)` | `rgb(0, 255, 0)` |
+| `cyan` | `rgb(0, 168, 168)` | `rgb(0, 255, 255)` |
+| `red` | `rgb(168, 0, 0)` | `rgb(255, 0, 0)` |
+| `purple` | `rgb(168, 0, 168)` | `rgb(255, 0, 255)` |
+| `yellow` | `rgb(168, 168, 0)` | `rgb(255, 255, 0)` |
+| `white` |`rgb(168, 168, 168)` | `rgb(255, 255, 255)` |
 
 ## CSS Color Classes
 | Class | Description |
