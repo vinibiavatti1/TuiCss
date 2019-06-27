@@ -322,6 +322,6 @@ This is a simple doc for the avaiable components in the framework. For more deta
 | `.<color>-255-text-hover` | Change the foreground color to a specified color name with value 255 on mouse hover | 
 
 ## Credit
-TuiCss Framework (c) Copyright 2018<br>
+TuiCss Framework &copy; Copyright 2018<br>
 by Vinícius Reif Biavatti<br>
 VBFoundation
