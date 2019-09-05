@@ -1,0 +1,33 @@
+@import '../variables.scss';
+@import '../mixins.scss';
+
+.tui-checkbox {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    color: white;
+    padding-left: 30px;
+    @include disable-select;
+}
+.tui-checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    top: 0px;
+    left: 0px;
+}
+.tui-checkbox span {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    cursor: pointer;
+    top: 0px;
+    left: 0px;
+}
+.tui-checkbox input:checked ~ span::after {
+    content: $checkbox-on;
+    color: rgb(0, 255, 255);
+}
+.tui-checkbox input:not(checked) ~ span::after {
+    content: $checkbox-off;
+}

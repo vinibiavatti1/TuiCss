@@ -1,0 +1,54 @@
+@import '../variables.scss';
+@font-face {
+  font-family: 'DOS';
+  src: url('./fonts/Perfect DOS VGA 437 Win.ttf');
+}
+
+/* Global Definitions */
+html {
+    font-family: $font, 'monospace';
+    font-size: $font-size;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+}
+
+*, *:before, *:after {
+    font-family: inherit;
+    font-size: inherit;
+    box-sizing: inherit;
+}
+
+ul {
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+ul li a {
+    display: block;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+span {
+    margin: 0px;
+}
+
+hr {
+    border: none;
+    border-bottom: 2px solid rgb(255, 255, 255);
+}
+
+input, select, textarea {
+    width: 200px;
+}

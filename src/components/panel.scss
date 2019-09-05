@@ -1,0 +1,17 @@
+.tui-panel {
+    background-color: rgb(0, 0, 168);
+    display: inline-block;
+    color: white;
+    box-shadow: 10px 10px black;
+}
+
+.tui-panel-content {
+    padding: 12px;
+}
+
+.tui-panel-header {
+    padding-top: 2px;
+    display: block;
+    background: white;
+    text-align: center;
+}

@@ -1,0 +1,11 @@
+.tui-input {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    outline:0;
+    border: none;
+    padding: 1px;
+}
+.tui-input:focus {
+    background-color: rgb(255, 255, 0)!important;
+    color: black!important;
+}

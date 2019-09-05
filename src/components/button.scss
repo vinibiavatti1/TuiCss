@@ -1,0 +1,22 @@
+@import '../mixins.scss';
+
+.tui-button {
+	display: inline-block;
+    outline:0;
+    padding: 1px 10px;
+    background-color: rgb(0, 168, 0);
+    color: black;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    box-shadow: 10px 10px black;
+    @include disable-select;
+}
+.tui-button:active {
+    background-color: rgb(0, 168, 168)!important;
+    color: black!important;
+    box-shadow: none!important;
+}
+.tui-button:focus {
+    color: rgb(0, 255, 255)!important;
+}

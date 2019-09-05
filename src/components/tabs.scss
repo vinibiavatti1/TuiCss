@@ -1,0 +1,26 @@
+@import '../mixins.scss';
+
+.tui-tabs {
+    background-color: rgb(0, 0, 168);
+    width: 100%;
+    padding: 0px 10px 0px 10px;
+}
+.tui-tabs ul li {
+    display: inline-block;
+}
+.tui-tabs ul li a {
+    display: block;
+    @include disable-select;
+}
+.tui-tab {
+    padding: 2px 10px 0px 10px;
+    color: rgb(168, 168, 168);
+    cursor: pointer;
+    &.active {
+        background-color: rgb(168, 168, 168);
+        color: rgb(0, 0, 168);
+    }
+}
+.tui-tab-content {
+    display: none;
+}

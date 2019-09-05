@@ -1,0 +1,65 @@
+.tui-window-fieldset {
+    border: 6px white double;
+    padding: 10px;
+    background-color: inherit;
+    margin-bottom: 6px;
+}
+.tui-window-fieldset-no-legend {
+    margin-top: 6px;
+}
+.tui-input-fieldset {
+    border-top: 6px white double;
+    border-bottom: 6px white double;
+    border-left: 2px white solid;
+    border-right: 2px white solid;
+    padding: 5px;
+    background-color: inherit;
+}
+.tui-input-fieldset:hover {
+    border-color: yellow!important;
+}
+.tui-input-fieldset:hover legend {
+    color: yellow!important;
+}
+.tui-border-solid {
+    border: 2px white solid;
+}
+.tui-fieldset-button {
+    position: absolute;
+    top: 0px;
+    right: 16px;
+    color: white;
+    background-color: inherit;
+    z-index: 2;
+    border: none;
+    cursor: pointer;
+    outline:0;
+    padding: 2px;
+}
+.tui-fieldset-statusbar {
+    position: absolute;
+    bottom: 0px;
+    left: 16px;
+    color: white;
+    background-color: inherit;
+    z-index: 2;
+    padding: 2px;
+
+    &.right {
+        left: initial;
+        right: 16px;
+    }
+}
+.tui-fieldset-button-left {
+    left: 16px!important;
+    right: initial;
+}
+.tui-fieldset-button::before {
+    content: "[";
+}
+.tui-fieldset-button::after {
+    content: "]";
+}
+.tui-fieldset-button:active {
+    color: rgb(0, 255, 255)!important;
+}

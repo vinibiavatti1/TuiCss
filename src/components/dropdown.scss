@@ -1,0 +1,26 @@
+@import '../mixins.scss';
+
+.tui-dropdown {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    @include disable-select;
+}
+.tui-dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(168, 168, 168);
+    min-width: 200px;
+    padding: 6px;
+    z-index: 9;
+}
+.tui-dropdown-content ul {
+    border: 2px black solid;
+}
+.tui-dropdown-content ul li {
+    display: block!important;
+    margin: 6px;
+}
+.tui-dropdown:hover > .tui-dropdown-content:first-of-type {
+    display: block;
+}

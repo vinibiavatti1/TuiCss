@@ -1,0 +1,68 @@
+@import '../mixins.scss';
+
+.tui-no-padding {
+    padding: 0px!important;
+}
+
+.left {
+    float: left!important;
+}
+.right {
+    float: right!important;
+}
+.center {
+    text-align: center;
+}
+.left-align {
+    text-align: left;
+}
+.right-align {
+    text-align: right;
+}
+.center-align {
+    text-align: center;
+}
+
+.full-width {
+    width: 100%!important;
+}
+.full-height {
+    height: 100%!important;
+}
+
+.inline {
+    display: inline!important;
+}
+.block {
+    display: block!important;
+}
+
+.fixed {
+    position: fixed!important;
+}
+.absolute {
+    position: absolute!important;
+}
+.relative {
+    position: relative!important;
+}
+.static {
+    position: static!important;
+}
+
+.tui-shortcut {
+    float: right;
+}
+.tui-content {
+    padding: 12px;
+}
+.tui-disable-select {
+    @include disable-select;
+}
+
+.texturized {
+    background-image: url('./images/bg.png');
+    }
+.texturized-black {
+    background-image: url('./images/bg-black.png');
+}

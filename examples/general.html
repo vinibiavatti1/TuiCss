@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>TUI</title>
-    <link rel="stylesheet" href="TuiCss/tuicss.css">
+    <script src="plugins/jquery-3.4.1.min.js"></script>
+    <script src="../dist/tuicss.min.js"></script>
+    <link rel="stylesheet" href="../dist/tuicss.min.css">
 </head>
 
 <body>
@@ -66,31 +68,9 @@
 
     <!-- NAV -->
     <nav class="tui-nav tui-nav-fixed">
-        <span class="tui-clock" id="clock"></span>
+        <span class="tui-date" data-format="M/d/y h:m:s"></span>
         <ul>
-            <li class="tui-dropdown">
-                <span class="red-168-text">≡</span>
-                <div class="tui-dropdown-content">
-                    <ul>
-                        <li>
-                            <a href="#!">
-                                <span class="red-168-text">R</span>epaint desktop
-                            </a>
-                        </li>
-                        <div class="tui-black-divider"></div>
-                        <li>
-                            <a href="#!">
-                                R<span class="red-168-text">e</span>load
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#!">
-                                Re<span class="red-168-text">s</span>tore
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </li>
+            <li class="tui-sidenav-button"><a class="red-168-text">≡</a></li>
             <li class="tui-dropdown">
                 <span class="red-168-text">F</span>ile
                 <div class="tui-dropdown-content">
@@ -125,7 +105,8 @@
                         <div class="tui-black-divider"></div>
 
                         <!-- SUBMENU EXAMPLE -->
-                        <li class="tui-dropdown">
+                        
+                        <li class="tui-dropdown block">
                             <span class="right">►</span>
                             <span class="red-168-text">M</span>ore
                             <div class="tui-dropdown-content">
@@ -386,15 +367,35 @@
 
         <!-- PANEL EXAMPLE 1 -->
         <div class="tui-panel">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br> Vestibulum a posuere sapien, nec placerat
-            lorem.<br> Aliquam urna lorem, placerat et varius et, aliquam ac libero.
+            <div class="tui-panel-content">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br> Vestibulum a posuere sapien, nec placerat
+                lorem.<br> Aliquam urna lorem, placerat et varius et, aliquam ac libero.
+            </div>
         </div><br><br>
 
         <!-- PANEL EXAMPLE 2 -->
         <div class="tui-panel yellow-168 black-255-text">
-            NOTE: Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br> Vestibulum a posuere sapien, nec
-            placerat
-            lorem.<br> Aliquam urna lorem, placerat et varius et, aliquam ac libero.
+            <div class="tui-panel-content">
+                NOTE: Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br> Vestibulum a posuere sapien, nec
+                placerat
+                lorem.<br> Aliquam urna lorem, placerat et varius et, aliquam ac libero.
+            </div>
+        </div><br><br>
+
+        <div class="tui-panel white-168 black-255-text">
+            <div class="tui-panel-header">
+                About
+            </div>
+            <div class="tui-panel-content">
+                NOTE: Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br> Vestibulum a posuere sapien, nec
+                placerat
+                lorem.<br> Aliquam urna lorem, placerat et varius et, aliquam ac libero.
+                <br><br>
+                <div class="center">
+                    <button class="tui-button white-255" style="width: 80px">OK</button>
+                </div>
+                
+            </div>
         </div><br><br>
 
         <!-- INPUTS -->
@@ -473,6 +474,14 @@
                 </div>
                 75%
                 <div class="tui-progress">
+                    <span style="width: 75%"></span>
+                </div>
+                75% Texturized
+                <div class="tui-progress texturized">
+                    <span style="width: 75%"></span>
+                </div>
+                75% Text. black
+                <div class="tui-progress texturized-black">
                     <span style="width: 75%"></span>
                 </div>
                 100%
@@ -780,17 +789,5 @@ int main()
     <br><br>
 
 </body>
-<script>
-    window.onload = function () {
-        setInterval(function () {
-            var today = new Date();
-            var clock = document.getElementById("clock");
-            var hour = (today.getHours() + "").length == 2 ? today.getHours() : "0" + today.getHours();
-            var minute = (today.getMinutes() + "").length == 2 ? today.getMinutes() : "0" + today.getMinutes();
-            var second = (today.getSeconds() + "").length == 2 ? today.getSeconds() : "0" + today.getSeconds();
-            clock.innerHTML = hour + ":" + minute + ":" + second;
-        });
-    };
-</script>
 
 </html>

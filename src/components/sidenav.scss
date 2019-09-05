@@ -1,0 +1,41 @@
+@import '../mixins.scss';
+
+.tui-sidenav {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background-color: rgb(0, 168, 168);
+    min-width: 200px;
+    box-shadow: 10px 10px black!important;
+    padding: 6px;
+    z-index: 10;
+    height: 100%;
+    z-index: 8;
+    display: none;
+    &.right {
+        left: initial;
+        right: 0px;
+    }
+    &.active {
+        display: block !important;
+    }
+}
+.tui-sidenav ul {
+    margin-top: 20px;
+    border: 2px black solid;
+}
+.tui-sidenav ul li {
+    display: block;
+    margin: 6px;
+}
+.tui-sidenav ul li a {
+    display: block;
+    @include disable-select;
+}
+.tui-sidenav ul li:hover {
+    background-color: rgb(255, 255, 0);
+}
+.tui-sidenav-button {
+    cursor: pointer;
+    @include disable-select;
+}

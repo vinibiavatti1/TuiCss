@@ -1,0 +1,21 @@
+.tui-screen-640-360 {
+    width: 640px;
+    height: 360px;
+}
+.tui-screen-800-600 {
+    width: 800px;
+    height: 600px;
+}
+.tui-screen-1024-768 {
+    width: 1024px;
+    height: 768px;
+}
+
+.tui-screen-640-360,
+.tui-screen-800-600,
+.tui-screen-1024-768 {
+    position: relative;
+    &.bordered{
+        border: 2px solid black;
+    }
+}

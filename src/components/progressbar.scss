@@ -1,0 +1,30 @@
+.tui-progress {
+    display: block;
+    position: relative;
+    height: 16px;
+    width: 200px;
+    background-color: rgb(0, 168, 168);
+    overflow: hidden;
+}
+.tui-progress span {
+    position: absolute;
+    left: 0px;
+    background-color: rgb(0, 255, 255);
+    height: 16px;
+    display: inline-block;
+}
+.tui-progress .tui-indeterminate {
+    position: absolute;
+    left: 0px;
+    background-color: rgb(0, 255, 255);
+    height: 16px;
+    width: 16px;
+    display: inline-block;
+    animation: indeterminate 1s backwards;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes indeterminate {
+    from {margin-left: -10%; }
+    to {margin-left: 100%}
+}

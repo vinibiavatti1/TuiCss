@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>PC Startup</title>
+    <script src="plugins/jquery-3.4.1.min.js"></script>
+    <script src="../dist/tuicss.min.js"></script>
+    <link rel="stylesheet" href="../dist/tuicss.min.css">
+</head>
+
+<body>
+    <div class="tui-screen-800-600 black white-text" style="padding: 2px">
+        <img src="./resources/pcstartup1.png" width="40px" height="40px" style="float: left" />
+        <img src="./resources/pcstartup2.png" width="200px" height="150px" style="float: right" />
+        <div style="margin-top: 4px"></div>
+        Award Medallion BIOS v6.0, An Energy Star Ally<br>
+        Copyright (C) 1984-2001, Award Software, Inc.<br><br>
+        ASUS P4T533-C ACPI BIOS Revision 1007 Beta 001<br><br>
+        Intel(R) Pentium(R) 4 2800 MHz Processor<br>
+        Memory Test : &nbsp;&nbsp; 262144K OK<br><br>
+        <div id="session-1" style="display: none">
+            Award Plug and Play BIOS Extension v1.0A<br>
+            Initialize Plug and Play Cards...<br>
+            PNP init Completed<br><br>
+        </div>
+        <div id="session-2" style="display: none">
+            Detecting Primary Master .....: MAXTOR 6L040J2<br>
+        </div>
+        <div id="session-3" style="display: none">
+            Detecting Primary Slave ......: ASUS CD-S520/A<br>
+        </div>
+        <div id="session-4" style="display: none">
+            Detecting Secondary Master ...: Skip<br>
+            Detecting Secondaty Slave ....: None
+        </div>
+        <div class="tui-statusbar absolute black white-text">
+            <ul>
+                <li style="margin-left: 0px">Press <b>DEL</b> to enter SETUP, <b>Alt+F2</b> to enter EZ flash utility
+                </li>
+            </ul>
+            <ul>
+                <li style="margin-left: 0px">08/20/2002-1850E/ICH2/W627-P4T533-C</li>
+            </ul>
+        </div>
+    </div>
+</body>
+<script>
+    $(document).ready(function() {
+        setTimeout(function() { $("#session-1").show(); }, 300);
+        setTimeout(function() { $("#session-2").show(); }, 400);
+        setTimeout(function() { $("#session-3").show(); }, 450);
+        setTimeout(function() { $("#session-4").show(); }, 870);
+    });
+</script>
+</html>

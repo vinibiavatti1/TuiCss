@@ -1,0 +1,31 @@
+/* Font (Options: 'Lucida Console' or 'DOS') */
+$font: 'Lucida Console';
+$font-size: 18px;
+
+/* Characters */
+$checkbox-on: '[√]';
+$checkbox-off: '[\00a0]';
+$radio-on: '(•)';
+$radio-off: '(\00a0)';
+
+/* Theme */
+$primary: rgb(255, 255, 255);
+$secondary: rgb(0, 0, 168);
+$success: rgb(0, 168, 0);
+$danger: rgb(168, 0, 0);
+$warning: rgb(168, 168, 0);
+$info: rgb(0, 168, 168);
+
+/* Responsive */
+$small-screen-up: 601px;
+$medium-screen-up: 993px;
+$large-screen-up: 1201px;
+$small-screen: 600px;
+$medium-screen: 992px;
+$large-screen: 1200px;
+$medium-and-up: "only screen and (min-width : #{$small-screen-up})";
+$large-and-up: "only screen and (min-width : #{$medium-screen-up})";
+$extra-large-and-up: "only screen and (min-width : #{$large-screen-up})";
+$small-and-down: "only screen and (max-width : #{$small-screen})";
+$medium-and-down: "only screen and (max-width : #{$medium-screen})";
+$medium-only: "only screen and (min-width : #{$small-screen-up}) and (max-width : #{$medium-screen})";

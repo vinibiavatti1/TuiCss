@@ -1,0 +1,22 @@
+.tui-table {
+    border: 2px solid rgb(168, 168, 168);
+    padding: 5px;
+    border-collapse: collapse;
+}
+.tui-table-hover tbody tr:hover {
+    background-color: rgb(0, 255, 255);
+    color: black;
+}
+.tui-table tbody {
+    background-color: inherit;
+    color: white;
+}
+.tui-table tbody tr td {
+    border-right: 2px solid rgb(168, 168, 168);
+    padding: 0px 2px;
+}
+.tui-table thead {
+    background-color: inherit;
+    color: rgb(255, 255, 0);
+    text-align: center;
+}

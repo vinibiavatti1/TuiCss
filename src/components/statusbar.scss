@@ -1,0 +1,28 @@
+@import '../mixins.scss';
+
+.tui-statusbar {
+    width: 100%;
+    background-color: rgb(168, 168, 168);
+    padding: 0px 1px;
+    left: 0px;
+    bottom: 0px;
+    z-index: 9;
+    position: fixed;
+}
+.tui-statusbar ul li {
+    display: inline-block;
+    margin-left: 10px;
+    padding: 2px 3px;
+}
+.tui-statusbar ul li:active {
+    background-color: rgb(0, 0, 168);
+    color: white;
+}
+.tui-statusbar ul li a {
+    @include disable-select;
+}
+.tui-statusbar-divider {
+    border-right: 2px black solid;
+    display: inline;
+    margin: 0px 3px;
+} 

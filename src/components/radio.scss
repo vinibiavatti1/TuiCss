@@ -1,0 +1,33 @@
+@import '../variables.scss';
+@import '../mixins.scss';
+
+.tui-radio {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    color: white;
+    padding-left: 30px;
+    @include disable-select;
+}
+.tui-radio input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    top: 0px;
+    left: 0px;
+}
+.tui-radio span {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    cursor: pointer;
+    top: 0px;
+    left: 0px;
+}
+.tui-radio input:checked ~ span:after {
+    content: $radio-on;
+    color: rgb(0, 255, 255)!important;
+}
+.tui-radio input:not(checked) ~ span:after {
+    content: $radio-off;
+}

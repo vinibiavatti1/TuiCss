@@ -1,0 +1,13 @@
+.tui-table-grid {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.tui-table-grid thead tr td,
+.tui-table-grid tbody tr td,
+.tui-table-grid thead tr th,
+.tui-table-grid tbody tr th {
+    border: 2px solid black;
+    padding: 10px;
+    vertical-align: top;
+}
