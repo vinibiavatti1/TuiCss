@@ -557,8 +557,20 @@ input, select, textarea {
 .inline {
   display: inline !important; }
 
+.inline-block {
+  display: inline-block !important; }
+
 .block {
   display: block !important; }
+
+.valign-top {
+  vertical-align: top !important; }
+
+.valign-middle {
+  vertical-align: middle !important; }
+
+.valign-bottom {
+  vertical-align: bottom !important; }
 
 .fixed {
   position: fixed !important; }
@@ -796,7 +808,7 @@ input, select, textarea {
   background: white;
   text-align: center; }
 
-.tui-progress {
+.tui-progress-bar {
   display: block;
   position: relative;
   height: 20px;
@@ -804,14 +816,14 @@ input, select, textarea {
   background-color: #00a8a8;
   overflow: hidden; }
 
-.tui-progress span {
+.tui-progress {
   position: absolute;
   left: 0px;
   background-color: cyan;
-  height: 20px;
+  height: 100%;
   display: inline-block; }
 
-.tui-progress .tui-indeterminate {
+.tui-progress-bar .tui-indeterminate {
   position: absolute;
   left: 0px;
   background-color: cyan;
@@ -821,6 +833,13 @@ input, select, textarea {
   animation: indeterminate 1s backwards;
   animation-iteration-count: infinite;
   animation-timing-function: linear; }
+
+.tui-progress-label {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  z-index: 1; }
 
 @keyframes indeterminate {
   from {
@@ -1099,54 +1118,6 @@ input, select, textarea {
 
 .tui-no-shadow {
   box-shadow: none !important; }
-
-.tui-texturized-blue-white {
-  background-image: url("./images/bg-blue-white.png");
-  background-repeat: repeat; }
-
-.tui-texturized-blue-black {
-  background-image: url("./images/bg-blue-black.png");
-  background-repeat: repeat; }
-
-.tui-texturized-green-white {
-  background-image: url("./images/bg-green-white.png");
-  background-repeat: repeat; }
-
-.tui-texturized-green-black {
-  background-image: url("./images/bg-green-black.png");
-  background-repeat: repeat; }
-
-.tui-texturized-cyan-white {
-  background-image: url("./images/bg-cyan-white.png");
-  background-repeat: repeat; }
-
-.tui-texturized-cyan-black {
-  background-image: url("./images/bg-cyan-black.png");
-  background-repeat: repeat; }
-
-.tui-texturized-red-white {
-  background-image: url("./images/bg-red-white.png");
-  background-repeat: repeat; }
-
-.tui-texturized-red-black {
-  background-image: url("./images/bg-red-black.png");
-  background-repeat: repeat; }
-
-.tui-texturized-purple-white {
-  background-image: url("./images/bg-purple-white.png");
-  background-repeat: repeat; }
-
-.tui-texturized-purple-black {
-  background-image: url("./images/bg-purple-black.png");
-  background-repeat: repeat; }
-
-.tui-texturized-yellow-white {
-  background-image: url("./images/bg-yellow-white.png");
-  background-repeat: repeat; }
-
-.tui-texturized-yellow-black {
-  background-image: url("./images/bg-yellow-black.png");
-  background-repeat: repeat; }
 
 .tui-bg-blue-white {
   background-image: url("./images/bg-blue-white.png");

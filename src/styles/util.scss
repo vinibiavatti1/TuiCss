@@ -33,8 +33,21 @@
 .inline {
     display: inline!important;
 }
+.inline-block {
+    display: inline-block!important;
+}
 .block {
     display: block!important;
+}
+
+.valign-top {
+    vertical-align: top!important;
+}
+.valign-middle {
+    vertical-align: middle!important;
+}
+.valign-bottom {
+    vertical-align: bottom!important;
 }
 
 .fixed {

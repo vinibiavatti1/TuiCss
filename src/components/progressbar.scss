@@ -1,4 +1,4 @@
-.tui-progress {
+.tui-progress-bar {
     display: block;
     position: relative;
     height: 20px;
@@ -6,14 +6,14 @@
     background-color: rgb(0, 168, 168);
     overflow: hidden;
 }
-.tui-progress span {
+.tui-progress {
     position: absolute;
     left: 0px;
     background-color: rgb(0, 255, 255);
-    height: 20px;
+    height: 100%;
     display: inline-block;
 }
-.tui-progress .tui-indeterminate {
+.tui-progress-bar .tui-indeterminate {
     position: absolute;
     left: 0px;
     background-color: rgb(0, 255, 255);
@@ -23,6 +23,13 @@
     animation: indeterminate 1s backwards;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
+}
+.tui-progress-label {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: 1;
 }
 @keyframes indeterminate {
     from {margin-left: -10%; }
