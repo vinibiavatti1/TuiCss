@@ -50,19 +50,9 @@
     position: static!important;
 }
 
-.tui-shortcut {
-    float: right;
-}
 .tui-content {
     padding: 12px;
 }
 .tui-disable-select {
     @include disable-select;
-}
-
-.texturized {
-    background-image: url('./images/bg.png');
-    }
-.texturized-black {
-    background-image: url('./images/bg-black.png');
 }

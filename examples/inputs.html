@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" class="tui-bg-blue-black">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Inputs Example</title>
+    <script src="plugins/jquery-3.4.1.min.js"></script>
+    <script src="../dist/tuicss.min.js"></script>
+    <link rel="stylesheet" href="../dist/tuicss.min.css">
+    <style>
+        .tui-input {
+            width: 300px;
+        }
+    </style>
+</head>
+
+<body class="center" style="padding: 50px">
+    <div class="tui-window" style="text-align: left">
+        <fieldset class="tui-window-fieldset">
+            <legend class="center">Form</legend>
+            Text.......: <input class="tui-input" value="text" /><br>
+            Number.....: <input class="tui-input" type="number" value="25" /><br>
+            Password...: <input class="tui-input" type="password" value="12345" /><br>
+            Color......: <input class="tui-input" type="color" value="#00FF00" /><br>
+            Select.....: <select class="tui-input">
+                <option>First</option>
+                <option>Second</option>
+                <option>Third</option>
+            </select><br>
+            Date.......: <input class="tui-input" type="date" value="2019-01-01" /><br>
+            Time.......: <input class="tui-input" type="datetime-local" value="2019-01-01T12:00" />
+            <br><br>
+            <fieldset class="tui-input-fieldset">
+                <legend>Checkboxes</legend>
+                <label class="tui-checkbox">First
+                    <input type="checkbox" checked />
+                    <span></span>
+                </label>
+                <label class="tui-checkbox">Second
+                    <input type="checkbox" />
+                    <span></span>
+                </label>
+                <label class="tui-checkbox">Third
+                    <input type="checkbox" />
+                    <span></span>
+                </label>
+            </fieldset>
+            <br>
+            <fieldset class="tui-input-fieldset">
+                <legend>Radios</legend>
+                <label class="tui-radio">First
+                    <input type="radio" name="radio" checked />
+                    <span></span>
+                </label>
+                <label class="tui-radio">Second
+                    <input type="radio" name="radio" />
+                    <span></span>
+                </label>
+                <label class="tui-radio">Third
+                    <input type="radio" name="radio" />
+                    <span></span>
+                </label>
+            </fieldset>
+            <br>
+            Textarea<br>
+            <textarea class="tui-input" style="width: 100%"></textarea>
+            <br>
+            Multiple<br>
+            <select multiple class="tui-input" style="width: 100%">
+                <option>---</option>
+                <option>First</option>
+                <option>Second</option>
+                <option>Third</option>
+            </select><br>
+        </fieldset>
+    </div>
+</body>
+
+</html>

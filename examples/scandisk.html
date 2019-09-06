@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Scandisk Example</title>
+    <script src="plugins/jquery-3.4.1.min.js"></script>
+    <script src="../dist/tuicss.min.js"></script>
+    <link rel="stylesheet" href="../dist/tuicss.min.css">
+    <style>
+        .scandisk-button {
+            background-color: rgb(80, 80, 80);
+            color: rgb(168, 168, 168);
+            margin-right: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="tui-screen-800-600 bordered blue-168" style="padding: 40px">
+        <span class="cyan-255-text">Microsoft ScanDisk</span>
+        <br><br>
+        <span class="tui-divider cyan-255-border"></span>
+        <br><br>
+        <span class="white-168-text">ScanDisk is now checking the following areas of drive C:</span>
+        <br><br>
+        <div class="white-168-text" style="padding-left: 80px">
+            <span class="cyan-255-text">√</span><span style="margin-left: 30px">Media descriptor</span><br>
+            <span class="cyan-255-text">√</span><span style="margin-left: 30px">Files allocation tables</span><br>
+            <span class="cyan-255-text">»</span><span style="margin-left: 30px">Directory structure</span><br>
+            <span class="cyan-255-text">&nbsp;</span><span style="margin-left: 30px">File system</span><br>
+            <span class="cyan-255-text">&nbsp;</span><span style="margin-left: 30px">Free space</span><br>
+            <span class="cyan-255-text">&nbsp;</span><span style="margin-left: 30px">Surface scan</span><br>
+        </div>
+        <div style="height: 220px"></div>
+        <div>
+            <button class="tui-button scandisk-button white-text">◄ Pause ►</button>
+            <button class="tui-button scandisk-button"><span class="white-text">M</span>ore info</button>
+            <button class="tui-button scandisk-button">E<span class="white-text">x</span>it</button>
+        </div>
+        <br><br>
+        <span class="tui-divider cyan-255-border"></span>
+        <br>
+        <div>
+            <span class="cyan-255-text">75% complete</span>
+            <span class="tui-progress right tui-texturized-blue-black" style="width: 550px; ">
+                <span style="width: 75%" class="yellow-255"></span>
+            </span>
+        </div>
+    </div>
+</body>
+</html>

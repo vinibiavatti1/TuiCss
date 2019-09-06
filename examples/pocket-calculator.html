@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Pocket Calculator Example</title>
+    <script src="plugins/jquery-3.4.1.min.js"></script>
+    <script src="../dist/tuicss.min.js"></script>
+    <link rel="stylesheet" href="../dist/tuicss.min.css">
+</head>
+
+<body>
+    <div class="tui-screen-800-600 bordered blue-168" style="padding: 40px">
+        <div class="center" style="margin-top: 100px;">
+            <div class="tui-window white-168">
+                <fieldset class="tui-window-fieldset">
+                    <legend align="center">Pocket Calculator</legend>
+                    &nbsp;<input id="display" class="tui-input blue-168 white-255-text" style="text-align: right;" disabled value="872.9000" />
+                    <br><br>
+                    <button class="tui-button" onclick="clearDisplay()">C&nbsp;</button>
+                    <button class="tui-button">&#60;-</button>
+                    <button class="tui-button">%&nbsp;</button>
+                    <button class="tui-button">+-</button><br><br>
+                    <button class="tui-button" onclick="digit('7')">7&nbsp;</button>
+                    <button class="tui-button" onclick="digit('8')">8&nbsp;</button>
+                    <button class="tui-button" onclick="digit('9')">9&nbsp;</button>
+                    <button class="tui-button">/&nbsp;</button><br><br>
+                    <button class="tui-button" onclick="digit('4')">4&nbsp;</button>
+                    <button class="tui-button" onclick="digit('5')">5&nbsp;</button>
+                    <button class="tui-button" onclick="digit('6')">6&nbsp;</button>
+                    <button class="tui-button">*&nbsp;</button><br><br>
+                    <button class="tui-button" onclick="digit('1')">1&nbsp;</button>
+                    <button class="tui-button" onclick="digit('2')">2&nbsp;</button>
+                    <button class="tui-button" onclick="digit('3')">3&nbsp;</button>
+                    <button class="tui-button">-&nbsp;</button><br><br>
+                    <button class="tui-button" onclick="digit('0')">0&nbsp;</button>
+                    <button class="tui-button" onclick="digit('.')">.&nbsp;</button>
+                    <button class="tui-button">=&nbsp;</button>
+                    <button class="tui-button">+&nbsp;</button>
+                </fieldset>
+            </div>
+        </div>
+    </div>
+    <script>
+        function digit(digit) {
+            let val = $("#display").val();
+            $("#display").val(digit + "" + val);
+        }
+        function clearDisplay() {
+            $("#display").val("");
+        }
+    </script>
+</body>
+
+</html>

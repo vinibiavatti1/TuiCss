@@ -1,11 +1,12 @@
 .tui-window-fieldset {
     border: 6px white double;
-    padding: 10px;
+    padding: 12px;
     background-color: inherit;
     margin-bottom: 6px;
-}
-.tui-window-fieldset-no-legend {
-    margin-top: 6px;
+
+    &.no-legend {
+        margin-top: 6px;
+    }
 }
 .tui-input-fieldset {
     border-top: 6px white double;
@@ -35,6 +36,11 @@
     cursor: pointer;
     outline:0;
     padding: 2px;
+    
+    &.left {
+        right: initial;
+        left: 16px !important;
+    }
 }
 .tui-fieldset-statusbar {
     position: absolute;
@@ -49,10 +55,6 @@
         left: initial;
         right: 16px;
     }
-}
-.tui-fieldset-button-left {
-    left: 16px!important;
-    right: initial;
 }
 .tui-fieldset-button::before {
     content: "[";

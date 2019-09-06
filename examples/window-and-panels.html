@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en" class="tui-bg-blue-black">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Window and Panels Example</title>
+    <script src="plugins/jquery-3.4.1.min.js"></script>
+    <script src="../dist/tuicss.min.js"></script>
+    <link rel="stylesheet" href="../dist/tuicss.min.css">
+    <style>
+        .tui-window, .tui-panel {
+            margin-bottom: 20px;
+            text-align: left;
+        }
+
+        .info-text {
+            margin-bottom: 10px;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="center" style="margin-top: 100px; margin-bottom: 100px">
+
+        <!-- Simple window -->
+        <div class="info-text">Simple window</div>
+        <div class="tui-window">
+            <fieldset class="tui-window-fieldset">
+                <legend>Window</legend>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>
+                Curabitur id vestibulum libero, id fermentum lorem.<br>
+                Aenean aliquam erat leo, eu tempus ex ornare eu.<br>
+                Sed ut lacus libero. Etiam rhoncus ipsum arcu.<br>
+                In quis bibendum libero. Donec nec egestas ipsum.<br>
+                Sed in venenatis diam. Nullam sollicitudin risus vel.<br>
+                <br>
+                <div class="tui-divider"></div>
+                <br>
+                <button class="tui-button white-255-text">more...</button>
+                <button class="tui-button purple-168 white-255-text">share</button>
+            </fieldset>
+        </div>
+
+        <!-- Scrool window -->
+        <div class="info-text">Scrool window</div>
+        <div class="tui-window white-168 black-255-text">
+            <fieldset class="tui-window-fieldset">
+                <legend class="white-255-text">Window</legend>
+                <div style="overflow: scroll; height: 200px; width: 400px; white-space: nowrap;">
+                    <span class="tui-shadow">The Lorem Ipsum </span><br><br>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>
+                    Curabitur id vestibulum libero, id fermentum lorem.<br>
+                    Aenean aliquam erat leo, eu tempus ex ornare eu.<br>
+                    Sed ut lacus libero. Etiam rhoncus ipsum arcu.<br>
+                    In quis bibendum libero. Donec nec egestas ipsum.<br>
+                    Sed in venenatis diam. Nullam sollicitudin risus vel.<br>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>
+                    Curabitur id vestibulum libero, id fermentum lorem.<br>
+                    Aenean aliquam erat leo, eu tempus ex ornare eu.<br>
+                    Sed ut lacus libero. Etiam rhoncus ipsum arcu.<br>
+                    In quis bibendum libero. Donec nec egestas ipsum.<br>
+                    Sed in venenatis diam. Nullam sollicitudin risus vel.<br>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>
+                    Curabitur id vestibulum libero, id fermentum lorem.<br>
+                    Aenean aliquam erat leo, eu tempus ex ornare eu.<br>
+                    Sed ut lacus libero. Etiam rhoncus ipsum arcu.<br>
+                    In quis bibendum libero. Donec nec egestas ipsum.<br>
+                    Sed in venenatis diam. Nullam sollicitudin risus vel.<br>
+                </div>
+            </fieldset>
+        </div>
+
+        <!-- Fieldset features -->
+        <div class="info-text">Fieldset features</div>
+        <div class="tui-window orange-168 black-255-text">
+            <fieldset class="tui-window-fieldset tui-border-solid white-border">
+                <legend class="center white-255-text">Window</legend>
+                <button class="tui-fieldset-button left"><span class="green-255-text">↑</span></button>
+                <button class="tui-fieldset-button"><span class="green-255-text">■</span></button>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>
+                Curabitur id vestibulum libero, id fermentum lorem.<br>
+                Aenean aliquam erat leo, eu tempus ex ornare eu.<br>
+                Sed ut lacus libero. Etiam rhoncus ipsum arcu.<br>
+                In quis bibendum libero. Donec nec egestas ipsum.<br>
+                Sed in venenatis diam. Nullam sollicitudin risus vel.<br>
+                <br>
+                <div class="tui-divider"></div>
+                <br>
+                <a class="tui-button white-168">Copy</a>
+                <a class="tui-button white-168">Paste</a>
+                <br><br>
+                <div class="tui-fieldset-statusbar">Text format: UTF-8</div>
+                <div class="tui-fieldset-statusbar right">Ln: 2, Col: 5</div>
+            </fieldset>
+        </div>
+
+        <!-- Item select -->
+        <div class="info-text">Item select</div>
+        <div class="tui-window purple-168">
+            <fieldset class="tui-window-fieldset no-legend tui-border-solid" style="width: 300px">
+                <ul>
+                    <li class="cyan-255-hover black-255-text-hover">
+                        <a href="#!">
+                            <span class="tui-shortcut">A</span>
+                            <span>Register Tables</span>
+                        </a>
+                    </li>
+                    <li class="cyan-255-hover black-255-text-hover">
+                        <a href="#!">
+                            <span class="tui-shortcut">B</span>
+                            <span>Register Consumers</span>
+                        </a>
+                    </li>
+                    <li class="cyan-255-hover black-255-text-hover">
+                        <a href="#!">
+                            <span class="tui-shortcut">C</span>
+                            <span>Register Companies</span>
+                        </a>
+                    </li>
+                </ul>
+            </fieldset>
+        </div>
+
+        <!-- Window textarea -->
+        <div class="info-text">Window textarea</div>
+        <div class="tui-window">
+            <fieldset class="tui-window-fieldset">
+                <legend class="center">MYAPP.CPP</legend>
+                <button class="tui-fieldset-button"><span class="green-255-text">↑</span></button>
+                <button class="tui-fieldset-button tui-fieldset-button-left"><span class="green-255-text">■</span></button>
+                <textarea class="tui-textarea" style="width: 400px; height: 200px;">#include &#60;iostream&#62;
+using namespace std;
+
+int main() 
+{
+    cout &#60;&#60; "Hello, World!";
+    return 0;
+}</textarea>
+            </fieldset>
+        </div>
+
+        <!-- Simple panel -->
+        <div class="info-text">Simple panel</div>
+        <div class="tui-panel cyan-168 black-255-text">
+            <div class="tui-panel-content">
+                <b>NOTE:</b> Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br> Vestibulum a posuere sapien, nec
+                placerat
+                lorem.<br> Aliquam urna lorem, placerat et varius et, aliquam ac libero.
+            </div>
+        </div>
+
+        <!-- Panel title -->
+        <div class="info-text">Panel title</div>
+        <div class="tui-panel white-168 black-255-text">
+            <div class="tui-panel-header">
+                About
+            </div>
+            <div class="tui-panel-content">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>
+                Curabitur id vestibulum libero, id fermentum lorem.
+                <br><br>
+                <div class="center">
+                    <button class="tui-button white-255" style="width: 80px">OK</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

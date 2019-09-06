@@ -1,3 +1,8 @@
+/* Styles */
+@import './styles/global.scss';
+@import './styles/color.scss';
+@import './styles/util.scss';
+
 /* Components */
 @import './components/button.scss';
 @import './components/checkbox.scss';
@@ -19,10 +24,9 @@
 @import './components/window.scss';
 @import './components/screen.scss';
 @import './components/date.scss';
-
-/* Styles */
-@import './styles/colors.scss';
-@import './styles/global.scss';
-@import './styles/shadow.scss';
-@import './styles/textures.scss';
-@import './styles/utils.scss';
+@import './components/shortcut.scss';
+@import './components/shadow.scss';
+@import './components/texture.scss';
+@import './components/background.scss';
+@import './components/border.scss';
+@import './components/grid.scss';

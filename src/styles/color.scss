@@ -52,6 +52,7 @@
 .purple-168                     {background-color: rgb(168, 0, 168)!important}
 .yellow-168                     {background-color: rgb(168, 168, 0)!important}
 .white-168                      {background-color: rgb(168, 168, 168)!important}
+.orange-168                      {background-color: rgb(168, 86, 0)!important}
 
 .black-168-text                 {color: rgb(0, 0, 0)!important}
 .blue-168-text                  {color: rgb(0, 0, 168)!important}
@@ -61,6 +62,7 @@
 .purple-168-text                {color: rgb(168, 0, 168)!important}
 .yellow-168-text                {color: rgb(168, 168, 0)!important}
 .white-168-text                 {color: rgb(168, 168, 168)!important}
+.orange-168-text                {color: rgb(168, 86, 0)!important}
 
 .black-168-border               {border-color: rgb(0, 0, 0)!important}
 .blue-168-border                {border-color: rgb(0, 0, 168)!important}
@@ -70,6 +72,7 @@
 .purple-168-border              {border-color: rgb(168, 0, 168)!important}
 .yellow-168-border              {border-color: rgb(168, 168, 0)!important}
 .white-168-border               {border-color: rgb(168, 168, 168)!important}
+.orange-168-border              {border-color: rgb(168, 86, 0)!important}
 
 .black-168-hover:hover          {background-color: rgb(0, 0, 0)!important}
 .blue-168-hover:hover           {background-color: rgb(0, 0, 168)!important}
@@ -79,15 +82,17 @@
 .purple-168-hover:hover         {background-color: rgb(168, 0, 168)!important}
 .yellow-168-hover:hover         {background-color: rgb(168, 168, 0)!important}
 .white-168-hover:hover          {background-color: rgb(168, 168, 168)!important}
+.orange-168-hover:hover         {background-color: rgb(168, 86, 0)!important}
 
 .black-168-text-hover:hover     {color: rgb(0, 0, 0)!important}
 .blue-168-text-hover:hover      {color: rgb(0, 0, 168)!important}
 .green-168-text-hover:hover     {color: rgb(0, 168, 0)!important}
 .cyan-168-text-hover:hover      {color: rgb(0, 168, 168)!important}
 .red-168-text-hover:hover       {color: rgb(168, 0, 0)!important}
-.purple-text-168-hover:hover    {color: rgb(168, 0, 168)!important}
-.yellow-text-168-hover:hover    {color: rgb(168, 168, 0)!important}
-.white-text-168-hover:hover     {color: rgb(168, 168, 168)!important}
+.purple-168-text-hover:hover    {color: rgb(168, 0, 168)!important}
+.yellow-168-text-hover:hover    {color: rgb(168, 168, 0)!important}
+.white-168-text-hover:hover     {color: rgb(168, 168, 168)!important}
+.orange-168-text-hover:hover    {color: rgb(168, 86, 0)!important}
 
 .black-168-border-hover:hover   {border-color: rgb(0, 0, 0)!important}
 .blue-168-border-hover:hover    {border-color: rgb(0, 0, 168)!important}
@@ -97,6 +102,7 @@
 .purple-168-border-hover:hover  {border-color: rgb(168, 0, 168)!important}
 .yellow-168-border-hover:hover  {border-color: rgb(168, 168, 0)!important}
 .white-168-border-hover:hover   {border-color: rgb(168, 168, 168)!important}
+.orange-168-border-hover:hover  {border-color: rgb(168, 86, 0)!important}
 
 /* 255 */
 .black-255                      {background-color: rgb(0, 0, 0)!important}
@@ -154,16 +160,23 @@
 .white-255-border-hover:hover   {border-color: rgb(255, 255, 255)!important}
 
 /* Misc */
-.black                      { background-color: black; }
-.black-text                 { color: black }
-.black-border               { border-color: black; }
-.black-hover:hover          { background-color: black; }
-.black-text-hover:hover     { color: black }
-.black-border-hover:hover   { border-color: black; }
+.black                      { background-color: black!important }
+.black-text                 { color: black!important }
+.black-border               { border-color: black!important }
+.black-hover:hover          { background-color: black!important }
+.black-text-hover:hover     { color: black!important }
+.black-border-hover:hover   { border-color: black!important }
 
-.white                      { background-color: white; }
-.white-text                 { color: white }
-.white-border               { border-color: white; }
-.white-hover:hover          { background-color: white; }
-.white-text-hover:hover     { color: white }
-.white-border-hover:hover   { border-color: white; }
+.white                      { background-color: white!important }
+.white-text                 { color: white!important }
+.white-border               { border-color: white!important }
+.white-hover:hover          { background-color: white!important }
+.white-text-hover:hover     { color: white!important }
+.white-border-hover:hover   { border-color: white!important }
+
+.orange                      { background-color: rgb(168, 86, 0)!important }
+.orange-text                 { color: rgb(168, 86, 0)!important }
+.orange-border               { border-color: rgb(168, 86, 0)!important }
+.orange-hover:hover          { background-color: rgb(168, 86, 0)!important }
+.orange-text-hover:hover     { color: rgb(168, 86, 0)!important }
+.orange-border-hover:hover   { border-color: rgb(168, 86, 0)!important }

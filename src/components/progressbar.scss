@@ -1,7 +1,7 @@
 .tui-progress {
     display: block;
     position: relative;
-    height: 16px;
+    height: 20px;
     width: 200px;
     background-color: rgb(0, 168, 168);
     overflow: hidden;
@@ -10,15 +10,15 @@
     position: absolute;
     left: 0px;
     background-color: rgb(0, 255, 255);
-    height: 16px;
+    height: 20px;
     display: inline-block;
 }
 .tui-progress .tui-indeterminate {
     position: absolute;
     left: 0px;
     background-color: rgb(0, 255, 255);
-    height: 16px;
-    width: 16px;
+    height: 20px;
+    width: 20px;
     display: inline-block;
     animation: indeterminate 1s backwards;
     animation-iteration-count: infinite;
