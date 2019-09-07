@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" class="tui-bg-blue-black">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Modal Example</title>
+    <script src="plugins/jquery-3.4.1.min.js"></script>
+    <script src="../dist/tuicss.min.js"></script>
+    <link rel="stylesheet" href="../dist/tuicss.min.css">
+</head>
+
+<body class="center">
+    <div style="margin-top: 300px"></div>
+
+    <!-- Button -->
+    <button class="tui-button tui-modal-button" data-modal="modal">◄ Click ►</button>
+
+    <!-- Overlap -->
+    <div class="tui-overlap"></div>
+
+    <!-- Modal window -->
+    <div id="modal" class="tui-modal">
+        <div class="tui-window red-168 left-align">
+            <fieldset class="tui-fieldset">
+                <legend class="red-255 yellow-255-text">Alert</legend>
+                This is an example of a modal window.
+                <br><br>
+                <div class="tui-divider"></div>
+                <br>
+                <button class="tui-button cyan-168 white-255-text tui-modal-close-button right" data-modal="modal">close</button>
+            </fieldset>
+        </div>
+    </div>
+</body>
+</html>

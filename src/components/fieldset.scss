@@ -1,4 +1,4 @@
-.tui-window-fieldset {
+.tui-fieldset {
     border: 6px white double;
     padding: 12px;
     background-color: inherit;
@@ -45,6 +45,20 @@
 .tui-fieldset-statusbar {
     position: absolute;
     bottom: 0px;
+    left: 16px;
+    color: white;
+    background-color: inherit;
+    z-index: 2;
+    padding: 2px;
+
+    &.right {
+        left: initial;
+        right: 16px;
+    }
+}
+.tui-fieldset-statusbar-top {
+    position: absolute;
+    top: 0px;
     left: 16px;
     color: white;
     background-color: inherit;

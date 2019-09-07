@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Turbo Vision Example</title>
+    <script src="plugins/jquery-3.4.1.min.js"></script>
+    <script src="../dist/tuicss.min.js"></script>
+    <link rel="stylesheet" href="../dist/tuicss.min.css">
+</head>
+
+<body>
+    <div class="tui-screen-800-600 bordered tui-bg-blue-black">
+
+        <!-- Navbar -->
+        <nav class="tui-nav absolute">
+            <span class="tui-date" data-format="h:m:s"></span>
+            <ul>
+                <li class="tui-dropdown"><a class="red-168-text">≡</a></li>
+                <li class="tui-dropdown">
+                    <span class="red-168-text">F</span>ile
+                    <div class="tui-dropdown-content">
+                        <ul>
+                            <li>
+                                <a href="#!">
+                                    <span class="red-168-text">N</span>ew
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#!">
+                                    <span class="red-168-text">O</span>pen...
+                                    <span class="tui-shortcut">F3</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#!">
+                                    <span class="red-168-text">S</span>ave
+                                    <span class="tui-shortcut">F2</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#!">
+                                    S<span class="red-168-text">a</span>ve as...
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#!">
+                                    Save a<span class="red-168-text">l</span>l
+                                </a>
+                            </li>
+                            <div class="tui-black-divider"></div>
+
+                            <!-- SUBMENU EXAMPLE -->
+
+                            <li class="tui-dropdown block">
+                                <span class="right">►</span>
+                                <span class="red-168-text">M</span>ore
+                                <div class="tui-dropdown-content">
+                                    <ul>
+                                        <li>
+                                            <a href="#!">
+                                                <span class="red-168-text">C</span>hange dir...
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#!">
+                                                <span class="red-168-text">P</span>rint
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#!">
+                                                <span class="red-168-text">D</span>OS shell
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <div class="tui-black-divider"></div>
+                            <li>
+                                <a href="#!">
+                                    <span class="red-168-text">Q</span>uit
+                                    <span class="tui-shortcut">F10</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="tui-dropdown">
+                    <span class="red-168-text">E</span>dit
+                </li>
+                <li class="tui-dropdown">
+                    <span class="red-168-text">E</span>dit Styled
+                </li>
+                <li class="tui-dropdown">
+                    <span class="red-168-text">H</span>elp
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Edit panel -->
+        <div class="tui-window full-width tui-no-shadow" style="margin-top: 20px;">
+            <fieldset class="tui-fieldset">
+                <legend class="center">MYAPP.CPP</legend>
+                <span class="tui-fieldset-button"><span class="green-255-text">↕</span></span>
+                <span class="tui-fieldset-button left"><span class="green-255-text">■</span></span>
+                <span class="tui-fieldset-statusbar-top right" style="margin-right: 50px">1</span>
+                <span class="tui-fieldset-statusbar" style="margin-left: 50px;">&nbsp;1:1&nbsp;</span>
+                <textarea class="tui-textarea full-width" style="height: 493px; overflow: scroll;">#include &#60;iostream&#62;
+using namespace std;
+
+int main() 
+{
+    cout &#60;&#60; "Hello, World!";
+    return 0;
+}</textarea>
+            </fieldset>
+        </div>
+
+        <!-- Status bar -->
+        <div class="tui-statusbar absolute">
+            <ul>
+                <li><a href="#!"><span class="red-168-text">F1</span> Help</a></li>
+                <li><a href="#!"><span class="red-168-text">F2</span> Save</a></li>
+                <li><a href="#!"><span class="red-168-text">F3</span> Open</a></li>
+                <li><a href="#!"><span class="red-168-text">Alt+F9</span> Compile</a></li>
+                <span class="tui-statusbar-divider"></span>
+                <li><a href="#!"><span class="red-168-text">F10</span> Menu</a></li>
+            </ul>
+        </div>
+
+    </div>
+</body>
+
+</html>

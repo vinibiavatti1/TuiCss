@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Register Example</title>
+    <script src="plugins/jquery-3.4.1.min.js"></script>
+    <script src="../dist/tuicss.min.js"></script>
+    <link rel="stylesheet" href="../dist/tuicss.min.css">
+    <style>
+        ul li {
+            display: inline-block;
+            margin-right: 60px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="tui-screen-800-600 bordered white-168 tui-bg-blue-black center">
+        
+        <div class="tui-window full-width tui-no-shadow left-align">
+            <fieldset class="tui-fieldset no-legend">
+                <ul>
+                    <li><a class="white-255-hover black-text-hover cursor-pointer inline">Tables</a></li>
+                    <li><a class="white-255-hover black-text-hover cursor-pointer inline">Reports</a></li>
+                    <li><a class="white-255-hover black-text-hover cursor-pointer inline">Print</a></li>
+                    <li><a class="white-255-hover black-text-hover cursor-pointer inline">Admin</a></li>
+                </ul>
+            </fieldset>
+        </div>
+
+        <div class="tui-window left-align" style="margin-top: 60px;">
+            <fieldset class="tui-fieldset">
+                <legend class="white-255-text center">Register</legend>
+                <div style="display: inline-block; width: 500px">
+                    <span class="yellow-255-text">N</span>umber.....:
+                    <input style="width: 100px" class="tui-input" type="number" value="106" /><br>
+                    <span class="yellow-255-text">D</span>ocument...:
+                    <input style="width: 150px" class="tui-input" value="1.504.00.1-00" /><br>
+                    <span class="yellow-255-text">F</span>irst Name.:
+                    <input style="width: 250px" class="tui-input" value="Robert" /><br>
+                    <span class="yellow-255-text">S</span>econd Name:
+                    <input style="width: 250px" class="tui-input" value="Munique Steffens" /><br>
+                    <span class="yellow-255-text">C</span>ity.......:
+                    <input style="width: 150px" class="tui-input" value="Blumenau" /><br>
+                    S<span class="yellow-255-text">t</span>ate......:
+                    <input style="width: 50px" class="tui-input" value="SC" /><br>
+                    C<span class="yellow-255-text">o</span>ntry.....:
+                    <input style="width: 100px" class="tui-input" value="Brazil" /><br><br>
+                    P<span class="yellow-255-text">h</span>one......:
+                    <input style="width: 200px" class="tui-input" value="(47) 3 3784-2134" /><br>
+                    F<span class="yellow-255-text">a</span>x........:
+                    <input style="width: 200px" class="tui-input" value="" /><br>
+                    E<span class="yellow-255-text">m</span>ail......:
+                    <input style="width: 250px" class="tui-input" value="robert@email.com" /><br><br>
+                    <span class="yellow-255-text">G</span>roup......:
+                    <select class="tui-input">
+                        <option>Awner</option>
+                        <option>Administrators</option>
+                        <option>Common Users</option>
+                    </select>
+                </div>
+                <div style="display: inline-block; width: 200px; vertical-align: top">
+                    <span>Locale</span>
+                    <div class="cyan-168">
+                        <label class="tui-radio black-255-text"> en-US
+                            <input type="radio" name="locale" checked>
+                            <span></span>
+                        </label>
+                        <label class="tui-radio black-255-text"> pt-BR
+                            <input type="radio" name="locale">
+                            <span></span>
+                        </label>
+                        <label class="tui-radio black-255-text"> ch-CH
+                            <input type="radio" name="locale">
+                            <span></span>
+                        </label>
+                        <label class="tui-radio black-255-text"> none
+                            <input type="radio" name="locale">
+                            <span></span>
+                        </label>
+                    </div>
+                    <div class="right">
+                        <span>...Cod:</span><input style="width: 30px" class="tui-input">
+                    </div>
+                    <br><br>
+                    <span>Currency</span>
+                    <div class="cyan-168 black-255-text">
+                        <label class="tui-radio black-255-text"> USD
+                            <input type="radio" name="currency" checked>
+                            <span></span>
+                        </label>
+                        <label class="tui-radio black-255-text"> R$
+                            <input type="radio" name="currency">
+                            <span></span>
+                        </label>
+                        <label class="tui-radio black-255-text"> none
+                            <input type="radio" name="currency">
+                            <span></span>
+                        </label>
+                    </div>
+                    <br>
+                    Registered at: 09/06/2019 09:38:00 PM
+                </div>
+                <br><br>
+                <button class="tui-button"><span class="yellow-255-text">n</span>ew</button>
+                <button class="tui-button"><span class="yellow-255-text">d</span>el</button>
+                <button class="tui-button"><span class="yellow-255-text">s</span>earch</button>
+                <button class="tui-button"><span class="yellow-255-text">l</span>ist</button>
+                <button class="tui-button"><span class="yellow-255-text">r</span>eports</button>
+                <br><br>
+            </fieldset>
+        </div>
+
+        <div class="tui-statusbar blue-255 white-255-text absolute left-align">
+            <ul>
+                <li><a>09/06/2019</a></li>
+                <li><a>Service Orders Count: 2</a></li>
+                <li><a>10:43:00 PM</a></li>
+            </ul>
+        </div>
+
+    </div>
+</body>
+</html>

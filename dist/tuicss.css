@@ -594,6 +594,12 @@ input, select, textarea {
   -moz-user-select: none;
   -ms-user-select: none; }
 
+.cursor-pointer {
+  cursor: pointer !important; }
+
+.cursor-default {
+  cursor: default !important; }
+
 /* Components */
 .tui-button {
   display: inline-block;
@@ -695,12 +701,12 @@ input, select, textarea {
 .tui-dropdown:hover > .tui-dropdown-content:first-of-type {
   display: block; }
 
-.tui-window-fieldset {
+.tui-fieldset {
   border: 6px white double;
   padding: 12px;
   background-color: inherit;
   margin-bottom: 6px; }
-  .tui-window-fieldset.no-legend {
+  .tui-fieldset.no-legend {
     margin-top: 6px; }
 
 .tui-input-fieldset {
@@ -747,6 +753,18 @@ input, select, textarea {
     left: initial;
     right: 16px; }
 
+.tui-fieldset-statusbar-top {
+  position: absolute;
+  top: 0px;
+  left: 16px;
+  color: white;
+  background-color: inherit;
+  z-index: 2;
+  padding: 2px; }
+  .tui-fieldset-statusbar-top.right {
+    left: initial;
+    right: 16px; }
+
 .tui-fieldset-button::before {
   content: "["; }
 
@@ -772,9 +790,7 @@ input, select, textarea {
   background-color: #a8a8a8;
   padding: 0px 2px;
   z-index: 9;
-  display: block; }
-
-.tui-nav-fixed {
+  display: block;
   position: fixed; }
 
 .tui-nav ul li {
@@ -1758,3 +1774,24 @@ input, select, textarea {
         right: 100%; }
       .row .col.push-xl12 {
         left: 100%; } }
+
+.tui-modal {
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  top: 100px;
+  z-index: 101;
+  display: none; }
+  .tui-modal.active {
+    display: block !important; }
+
+.tui-overlap {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  z-index: 100;
+  display: none; }
+  .tui-overlap.active {
+    display: block !important; }

@@ -5,6 +5,7 @@ $(document).ready(function() {
     tabsController();
     dateController();
     sidenavController();
+    modalController();
 });
 
 /**
@@ -21,6 +22,9 @@ function tabsController() {
     $('.tui-tab.active').click();
 }
 
+/**
+ * Date field controller
+ */
 function dateController() {
     let interval = setInterval(function () {
         let today = new Date();
@@ -49,6 +53,9 @@ function dateController() {
     });
 }
 
+/**
+ * Sidenav Controller
+ */
 function sidenavController() {
     $(".tui-sidenav-button").click(function() {
         let sidenav = $(".tui-sidenav");
@@ -57,5 +64,21 @@ function sidenavController() {
         } else {
             $(".tui-sidenav").addClass("active");
         }
+    });
+}
+
+/**
+ * Modal controller
+ */
+function modalController() {
+    $(".tui-modal-button").click(function() {
+        $(".tui-overlap").addClass("active");
+        let modalId = $(this).attr("data-modal");
+        $(`#${modalId}`).addClass("active");
+    });
+    $(".tui-modal-close-button").click(function() {
+        $(".tui-overlap").removeClass("active");
+        let modalId = $(this).attr("data-modal");
+        $(`#${modalId}`).removeClass("active");
     });
 }

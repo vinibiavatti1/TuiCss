@@ -1,0 +1,23 @@
+.tui-modal {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 100px;
+    z-index: 101;
+    display: none;
+    &.active {
+        display: block !important;
+    }
+}
+.tui-overlap {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    z-index: 100;
+    display: none;
+    &.active {
+        display: block !important;
+    }
+}

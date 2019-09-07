@@ -69,3 +69,10 @@
 .tui-disable-select {
     @include disable-select;
 }
+
+.cursor-pointer {
+    cursor: pointer !important;
+}
+.cursor-default {
+    cursor: default !important;
+}
