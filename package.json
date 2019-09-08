@@ -1,18 +1,18 @@
 {
   "name": "tuicss",
   "version": "1.0.0",
-  "description": "Text-based user interface CSS framework",
-  "main": "index.js",
+  "description": "TuiCss is a framework made to develop text-based user interface applications (TUI)",
+  "keywords": ["TUI", "Text based user interface", "Turbo vision", "TuiCss"],
+  "main": "dist/tuicss.min.css",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "build": "gulp"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/vinibiavatti1/TuiCss.git"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Vinícius Reif Biavatti",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/vinibiavatti1/TuiCss/issues"
   },
