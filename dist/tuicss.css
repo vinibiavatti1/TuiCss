@@ -701,6 +701,9 @@ input[type=button] {
   display: block !important;
   margin: 6px; }
 
+.tui-dropdown-content ul li a:hover {
+  background-color: #00a800; }
+
 .tui-dropdown:hover > .tui-dropdown-content:first-of-type {
   display: block; }
 
@@ -1097,7 +1100,7 @@ input[type=button] {
   .tui-screen-1024-768.bordered {
     border: 2px solid black; }
 
-.tui-date {
+.tui-datetime {
   padding: 1px 0px 1px 0px;
   margin-right: 10px;
   float: right; }

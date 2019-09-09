@@ -21,6 +21,9 @@
     display: block!important;
     margin: 6px;
 }
+.tui-dropdown-content ul li a:hover {
+    background-color: rgb(0, 168, 0);
+}
 .tui-dropdown:hover > .tui-dropdown-content:first-of-type {
     display: block;
 }

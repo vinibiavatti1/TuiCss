@@ -3,7 +3,7 @@
  */
 $(document).ready(function() {
     tabsController();
-    dateController();
+    datetimeController();
     sidenavController();
     modalController();
 });
@@ -25,32 +25,42 @@ function tabsController() {
 /**
  * Date field controller
  */
-function dateController() {
-    let interval = setInterval(function () {
+function datetimeController() {
+
+    if(!$(".tui-datetime").length) return;
+
+    datetimeInterval();
+    setInterval(datetimeInterval, 1000);
+
+    function datetimeInterval() {
         let today = new Date();
-        let clock = $(".tui-date");
-        if(!clock.length) {
-            clearInterval(interval);
-            return;
-        }
-        let format = clock.attr("data-format");
 
-        let month = (today.getMonth() + "").length == 2 ? today.getMonth() + 1 : "0" + (today.getMonth() + 1);
-        let day = (today.getDay() + "").length == 2 ? today.getDay() + 1 : "0" + (today.getDay() + 1);
-        let year = today.getFullYear();
-        let hour = (today.getHours() + "").length == 2 ? today.getHours() : "0" + today.getHours();
-        let minute = (today.getMinutes() + "").length == 2 ? today.getMinutes() : "0" + today.getMinutes();
-        let second = (today.getSeconds() + "").length == 2 ? today.getSeconds() : "0" + today.getSeconds();
+        $(".tui-datetime").each(function() {
+            let clock = $(this);
+            
+            let format = clock.attr("data-format");
 
-        format = format.replace("M", month);
-        format = format.replace("d", day);
-        format = format.replace("y", year);
-        format = format.replace("h", hour);
-        format = format.replace("m", minute);
-        format = format.replace("s", second);
+            let month = (today.getMonth() + "").length == 2 ? today.getMonth() + 1 : "0" + (today.getMonth() + 1);
+            let day = (today.getDay() + "").length == 2 ? today.getDay() + 1 : "0" + (today.getDay() + 1);
+            let year = today.getFullYear();
+            let hour = (today.getHours() + "").length == 2 ? today.getHours() : "0" + today.getHours();
+            let hour12 = (parseInt(hour) + 24) % 12 || 12;
+            let minute = (today.getMinutes() + "").length == 2 ? today.getMinutes() : "0" + today.getMinutes();
+            let second = (today.getSeconds() + "").length == 2 ? today.getSeconds() : "0" + today.getSeconds();
+            let ampm = parseInt(hour) >= 12 ? "PM" : "AM"; 
 
-        clock.html(format);
-    });
+            format = format.replace("M", month);
+            format = format.replace("d", day);
+            format = format.replace("y", year);
+            format = format.replace("H", hour);
+            format = format.replace("h", hour12);
+            format = format.replace("m", minute);
+            format = format.replace("s", second);
+            format = format.replace("a", ampm);
+
+            clock.html(format);
+        });
+    }
 }
 
 /**
