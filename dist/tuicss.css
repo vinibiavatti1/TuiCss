@@ -723,14 +723,14 @@ input[type=button] {
   padding: 5px;
   background-color: inherit; }
 
+.tui-input-fieldset legend {
+  color: white; }
+
 .tui-input-fieldset:hover {
-  border-color: yellow !important; }
+  border-color: yellow; }
 
 .tui-input-fieldset:hover legend {
-  color: yellow !important; }
-
-.tui-border-solid {
-  border: 2px white solid; }
+  color: yellow; }
 
 .tui-fieldset-button {
   position: absolute;
@@ -746,8 +746,11 @@ input[type=button] {
   .tui-fieldset-button.left {
     right: initial;
     left: 16px !important; }
+  .tui-fieldset-button.bottom {
+    bottom: 0px;
+    top: initial; }
 
-.tui-fieldset-statusbar {
+.tui-fieldset-text {
   position: absolute;
   bottom: 0px;
   left: 16px;
@@ -755,21 +758,12 @@ input[type=button] {
   background-color: inherit;
   z-index: 2;
   padding: 2px; }
-  .tui-fieldset-statusbar.right {
+  .tui-fieldset-text.right {
     left: initial;
     right: 16px; }
-
-.tui-fieldset-statusbar-top {
-  position: absolute;
-  top: 0px;
-  left: 16px;
-  color: white;
-  background-color: inherit;
-  z-index: 2;
-  padding: 2px; }
-  .tui-fieldset-statusbar-top.right {
-    left: initial;
-    right: 16px; }
+  .tui-fieldset-text.top {
+    top: 0px;
+    bottom: initial; }
 
 .tui-fieldset-button::before {
   content: "["; }
@@ -1198,16 +1192,20 @@ input[type=button] {
   background-repeat: repeat; }
 
 .tui-border-solid {
-  border: 2px solid !important; }
+  border-style: solid !important;
+  border-width: 2px !important; }
 
 .tui-border-dashed {
-  border: 2px dashed !important; }
+  border-style: dashed !important;
+  border-width: 2px !important; }
 
 .tui-border-dotted {
-  border: 2px dotted !important; }
+  border-style: dotted !important;
+  border-width: 2px !important; }
 
 .tui-border-double {
-  border: 6px double !important; }
+  border-style: double !important;
+  border-width: 6px !important; }
 
 /* Font (Options: 'Lucida Console' or 'DOS') */
 /* Characters */

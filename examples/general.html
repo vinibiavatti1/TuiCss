@@ -9,20 +9,27 @@
     <script src="plugins/jquery-3.4.1.min.js"></script>
     <script src="../dist/tuicss.min.js"></script>
     <link rel="stylesheet" href="../dist/tuicss.min.css">
+    <style>
+        .col {
+            margin-bottom: 20px;
+        }
+    </style>
 </head>
 
 <body style="padding: 50px;">
 
-    <nav class="tui-nav">
-    <span class="tui-datetime" data-format="h:m:s a"></span>
-    <ul>
-        <li class="tui-dropdown">
-            <span>Menu</span>
-			<div class="tui-dropdown-content">
-				...
-			</div>
-		</li>
-	</ul>
+<div class="container">
+    <div class="row">
+        <div class="col s12 m6 l6"><button class="tui-button full-width">6</button></div>
+        <div class="col s12 m6 l6"><button class="tui-button full-width">6</button></div>
+    </div>
+    <div class="row">
+        <div class="col offset-l3 offset-m3 s12 m3 l3"><button class="tui-button full-width">3</button></div>
+        <div class="col offset-l3 offset-m3 s12 m3 l3"><button class="tui-button full-width">3</button></div>
+    </div>
+</div>
+
+
 </nav>
 
 </body>

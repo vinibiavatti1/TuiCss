@@ -1,15 +1,19 @@
 .tui-border-solid {
-    border: 2px solid !important;
+    border-style: solid !important;
+    border-width: 2px !important;
 }
 
 .tui-border-dashed {
-    border: 2px dashed !important;
+    border-style: dashed !important;
+    border-width: 2px !important;
 }
 
 .tui-border-dotted {
-    border: 2px dotted !important;
+    border-style: dotted !important;
+    border-width: 2px !important;
 }
 
 .tui-border-double {
-    border: 6px double !important;
+    border-style: double !important;
+    border-width: 6px !important;
 }
