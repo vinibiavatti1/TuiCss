@@ -31,8 +31,8 @@ $medium-and-down: "only screen and (max-width : #{$medium-screen})";
 $medium-only: "only screen and (min-width : #{$small-screen-up}) and (max-width : #{$medium-screen})";
 
 /* Scrool */
-$scrool-image: url(images/scroll.png);
-$scrool-color: rgb(0, 168, 168);
+$scroll-default-image: url(images/scroll-cyan.png);
+$scroll-default-color: rgb(0, 168, 168);
 
 /* Grid */
 $num-cols: 12;
