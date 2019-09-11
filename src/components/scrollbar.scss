@@ -1,15 +1,101 @@
 @import '../variables.scss';
 
+/* Default */
 ::-webkit-scrollbar {
     width: 10px;
 }
 ::-webkit-scrollbar-track {
-    background-image: $scrool-image;
+    background-image: url(images/scroll-cyan.png);
     background-repeat: repeat;
 }
 ::-webkit-scrollbar-thumb {
-    background-color: $scrool-color;
+    background-color: rgb(0, 168, 168);;
 }
 ::-webkit-scrollbar-thumb:hover {
-    background-color: $scrool-color;
+    background-color: rgb(0, 168, 168);;
+}
+
+/* Styles */
+.tui-scroll-blue {
+    ::-webkit-scrollbar-track {
+        background-image: url(images/scroll-blue.png);
+    }
+    ::-webkit-scrollbar-thumb {
+        background-color: rgb(0, 0, 168);
+    }
+    ::-webkit-scrollbar-thumb:hover {
+        background-color: rgb(0, 0, 168);
+    }
+}
+
+.tui-scroll-green {
+    ::-webkit-scrollbar-track {
+        background-image: url(images/scroll-green.png);
+    }
+    ::-webkit-scrollbar-thumb {
+        background-color: rgb(0, 168, 0);
+    }
+    ::-webkit-scrollbar-thumb:hover {
+        background-color: rgb(0, 168, 0);
+    }
+}
+
+.tui-scroll-cyan {
+    ::-webkit-scrollbar-track {
+        background-image: url(images/scroll-cyan.png);
+    }
+    ::-webkit-scrollbar-thumb {
+        background-color: rgb(0, 168, 168);
+    }
+    ::-webkit-scrollbar-thumb:hover {
+        background-color: rgb(0, 168, 168);
+    }
+}
+
+.tui-scroll-red {
+    ::-webkit-scrollbar-track {
+        background-image: url(images/scroll-red.png);
+    }
+    ::-webkit-scrollbar-thumb {
+        background-color: rgb(168, 0, 0);
+    }
+    ::-webkit-scrollbar-thumb:hover {
+        background-color: rgb(168, 0, 0);
+    }
+}
+
+.tui-scroll-purple {
+    ::-webkit-scrollbar-track {
+        background-image: url(images/scroll-purple.png);
+    }
+    ::-webkit-scrollbar-thumb {
+        background-color: rgb(168, 0, 168);
+    }
+    ::-webkit-scrollbar-thumb:hover {
+        background-color: rgb(168, 0, 168);
+    }
+}
+
+.tui-scroll-yellow {
+    ::-webkit-scrollbar-track {
+        background-image: url(images/scroll-yellow.png);
+    }
+    ::-webkit-scrollbar-thumb {
+        background-color: rgb(168, 168, 0);
+    }
+    ::-webkit-scrollbar-thumb:hover {
+        background-color: rgb(168, 168, 0);
+    }
+}
+
+.tui-scroll-white {
+    ::-webkit-scrollbar-track {
+        background-image: url(images/scroll-white.png);
+    }
+    ::-webkit-scrollbar-thumb {
+        background-color: rgb(168, 168, 168);
+    }
+    ::-webkit-scrollbar-thumb:hover {
+        background-color: rgb(168, 168, 168);
+    }
 }

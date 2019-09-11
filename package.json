@@ -2,7 +2,12 @@
   "name": "tuicss",
   "version": "1.0.0",
   "description": "TuiCss is a framework made to develop text-based user interface applications (TUI)",
-  "keywords": ["TUI", "Text based user interface", "Turbo vision", "TuiCss"],
+  "keywords": [
+    "TUI",
+    "Text based user interface",
+    "Turbo vision",
+    "TuiCss"
+  ],
   "main": "dist/tuicss.min.css",
   "scripts": {
     "build": "gulp"
