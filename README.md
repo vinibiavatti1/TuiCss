@@ -33,7 +33,3 @@ Get this folder and put in you application structure. After this, choose the fil
 <link rel="stylesheet" href="dist/tuicss.min.css"/>
 <script src="dist/tuicss.min.js"></script>
 ```
-
-> The fonts folder needs to be in the same directory of imported css file. It is necessary if the main font was changed to "DOS" font in the variables.scss file. Check [[Custom Theme]] page for more details.
-
-> The images folder needs to be in the same directory of imported css file too, because some classes are targeting the images of this folder. If this folder was not in the correct place, this classes will be crashed and not works fine. 
