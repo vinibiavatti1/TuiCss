@@ -5,7 +5,7 @@ TuiCss is a framework focused to create web applications using an interface base
 
 <img src="https://i.ibb.co/zhJMy1h/Tui-Css-home.png" width="600">
 
-### Wiki
+### Documentation
 Check the [repository wiki](https://github.com/vinibiavatti1/TuiCss/wiki) to access the documentation, components index, examples, styles, or to know how to contribute for this project.
 
 ### Getting Started
