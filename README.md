@@ -6,7 +6,7 @@ TuiCss is a framework focused to create web applications using an interface base
 <img src="https://i.ibb.co/zhJMy1h/Tui-Css-home.png" width="600">
 
 ### Wiki
-Check the (repository wiki)[https://github.com/vinibiavatti1/TuiCss/wiki] to access the components index, examples, styles, or to know how to contribute for this project.
+Check the [repository wiki](https://github.com/vinibiavatti1/TuiCss/wiki) to access the components index, examples, styles, or to know how to contribute for this project.
 
 ### Getting Started
 TuiCss needs the JQuery to works with the script. To import JQuery, you can download or get this from CDN. This is the import code using Jquery from CDN:
