@@ -1,6 +1,6 @@
-.tui-screen-640-360 {
+.tui-screen-640-480 {
     width: 640px;
-    height: 360px;
+    height: 480px;
 }
 .tui-screen-800-600 {
     width: 800px;
@@ -11,11 +11,15 @@
     height: 768px;
 }
 
-.tui-screen-640-360,
+.tui-screen-640-480,
 .tui-screen-800-600,
 .tui-screen-1024-768 {
     position: relative;
     &.bordered{
         border: 2px solid black;
+    }
+    &.centered {
+        margin: auto;
+        margin-top: 20px;
     }
 }

@@ -1138,9 +1138,9 @@ input[type=button] {
   box-shadow: 10px 10px black;
   color: white; }
 
-.tui-screen-640-360 {
+.tui-screen-640-480 {
   width: 640px;
-  height: 360px; }
+  height: 480px; }
 
 .tui-screen-800-600 {
   width: 800px;
@@ -1150,14 +1150,19 @@ input[type=button] {
   width: 1024px;
   height: 768px; }
 
-.tui-screen-640-360,
+.tui-screen-640-480,
 .tui-screen-800-600,
 .tui-screen-1024-768 {
   position: relative; }
-  .tui-screen-640-360.bordered,
+  .tui-screen-640-480.bordered,
   .tui-screen-800-600.bordered,
   .tui-screen-1024-768.bordered {
     border: 2px solid black; }
+  .tui-screen-640-480.centered,
+  .tui-screen-800-600.centered,
+  .tui-screen-1024-768.centered {
+    margin: auto;
+    margin-top: 20px; }
 
 .tui-datetime {
   padding: 1px 0px 1px 0px;
