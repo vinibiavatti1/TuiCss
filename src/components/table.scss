@@ -2,10 +2,84 @@
     border: 2px solid rgb(168, 168, 168);
     padding: 5px;
     border-collapse: collapse;
-}
-.tui-table-hover tbody tr:hover {
-    background-color: rgb(0, 255, 255);
-    color: black;
+
+    &.hovered-blue tbody tr:hover {
+        background-color: rgb(0, 0, 255) !important;
+        color: black;
+    }
+
+    &.hovered-green tbody tr:hover {
+        background-color: rgb(0, 255, 0) !important;
+        color: black;
+    }
+
+    &.hovered-cyan tbody tr:hover {
+        background-color: rgb(0, 255, 255) !important;
+        color: black;
+    }
+
+    &.hovered-red tbody tr:hover {
+        background-color: rgb(255, 0, 0) !important;
+        color: white;
+    }
+
+    &.hovered-purple tbody tr:hover {
+        background-color: rgb(255, 0, 255) !important;
+        color: white;
+    }
+
+    &.hovered-yellow tbody tr:hover {
+        background-color: rgb(255, 255, 0) !important;
+        color: black;
+    }
+
+    &.hovered-white tbody tr:hover {
+        background-color: rgb(255, 255, 255) !important;
+        color: black;
+    }
+
+    &.hovered-orange tbody tr:hover {
+        background-color: rgb(255, 168, 0) !important;
+        color: black;
+    }
+
+    &.hovered tbody tr:hover {
+        background-color: rgb(0, 255, 255) !important;
+        color: black;
+    }
+
+    &.striped-blue tbody tr:nth-child(even) {
+        background-color: rgb(0, 0, 168);
+    }
+
+    &.striped-green tbody tr:nth-child(even) {
+        background-color: rgb(0, 168, 0);
+    }
+
+    &.striped-cyan tbody tr:nth-child(even) {
+        background-color: rgb(0, 168, 168);
+    }
+
+    &.striped-red tbody tr:nth-child(even) {
+        background-color: rgb(168, 0, 0);
+    }
+
+    &.striped-purple tbody tr:nth-child(even) {
+        background-color: rgb(168, 0, 168);
+    }
+
+    &.striped-yellow tbody tr:nth-child(even) {
+        background-color: rgb(168, 168, 0);
+    }
+
+    &.striped-white tbody tr:nth-child(even) {
+        background-color: rgb(168, 168, 168);
+        color: black;
+    }
+
+    &.striped-orange tbody tr:nth-child(even) {
+        background-color: rgb(168, 86, 0);
+    }
 }
 .tui-table tbody {
     background-color: inherit;
@@ -16,6 +90,11 @@
     padding: 0px 2px;
 }
 .tui-table thead {
+    background-color: inherit;
+    color: rgb(255, 255, 0);
+    text-align: center;
+}
+.tui-table tfoot {
     background-color: inherit;
     color: rgb(255, 255, 0);
     text-align: center;

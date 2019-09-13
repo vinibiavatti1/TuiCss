@@ -352,6 +352,9 @@ input, select, textarea {
 .white-255 {
   background-color: white !important; }
 
+.orange-255 {
+  background-color: #ffa800 !important; }
+
 .black-255-text {
   color: black !important; }
 
@@ -375,6 +378,9 @@ input, select, textarea {
 
 .white-255-text {
   color: white !important; }
+
+.orange-255-text {
+  color: #ffa800 !important; }
 
 .black-255-border {
   border-color: black !important; }
@@ -400,6 +406,9 @@ input, select, textarea {
 .white-255-border {
   border-color: white !important; }
 
+.orange-255-border {
+  border-color: #ffa800 !important; }
+
 .black-255-hover:hover {
   background-color: black !important; }
 
@@ -424,6 +433,9 @@ input, select, textarea {
 .white-255-hover:hover {
   background-color: white !important; }
 
+.orange-255-hover:hover {
+  background-color: #ffa800 !important; }
+
 .black-255-text-hover:hover {
   color: black !important; }
 
@@ -439,14 +451,17 @@ input, select, textarea {
 .red-255-text-hover:hover {
   color: red !important; }
 
-.purple-text-255-hover:hover {
+.purple-255-text-hover:hover {
   color: magenta !important; }
 
-.yellow-text-255-hover:hover {
+.yellow-255-text-hover:hover {
   color: yellow !important; }
 
-.white-text-255-hover:hover {
+.white-255-text-hover:hover {
   color: white !important; }
+
+.orange-255-text-hover:hover {
+  color: #ffa800 !important; }
 
 .black-255-border-hover:hover {
   border-color: black !important; }
@@ -471,6 +486,9 @@ input, select, textarea {
 
 .white-255-border-hover:hover {
   border-color: white !important; }
+
+.orange-255-border-hover:hover {
+  border-color: #ffa800 !important; }
 
 /* Misc */
 .black {
@@ -508,24 +526,6 @@ input, select, textarea {
 
 .white-border-hover:hover {
   border-color: white !important; }
-
-.orange {
-  background-color: #a85600 !important; }
-
-.orange-text {
-  color: #a85600 !important; }
-
-.orange-border {
-  border-color: #a85600 !important; }
-
-.orange-hover:hover {
-  background-color: #a85600 !important; }
-
-.orange-text-hover:hover {
-  color: #a85600 !important; }
-
-.orange-border-hover:hover {
-  border-color: #a85600 !important; }
 
 .tui-no-padding {
   padding: 0px !important; }
@@ -1066,10 +1066,50 @@ input[type=button] {
   border: 2px solid #a8a8a8;
   padding: 5px;
   border-collapse: collapse; }
-
-.tui-table-hover tbody tr:hover {
-  background-color: cyan;
-  color: black; }
+  .tui-table.hovered-blue tbody tr:hover {
+    background-color: blue !important;
+    color: black; }
+  .tui-table.hovered-green tbody tr:hover {
+    background-color: lime !important;
+    color: black; }
+  .tui-table.hovered-cyan tbody tr:hover {
+    background-color: cyan !important;
+    color: black; }
+  .tui-table.hovered-red tbody tr:hover {
+    background-color: red !important;
+    color: white; }
+  .tui-table.hovered-purple tbody tr:hover {
+    background-color: magenta !important;
+    color: white; }
+  .tui-table.hovered-yellow tbody tr:hover {
+    background-color: yellow !important;
+    color: black; }
+  .tui-table.hovered-white tbody tr:hover {
+    background-color: white !important;
+    color: black; }
+  .tui-table.hovered-orange tbody tr:hover {
+    background-color: #ffa800 !important;
+    color: black; }
+  .tui-table.hovered tbody tr:hover {
+    background-color: cyan !important;
+    color: black; }
+  .tui-table.striped-blue tbody tr:nth-child(even) {
+    background-color: #0000a8; }
+  .tui-table.striped-green tbody tr:nth-child(even) {
+    background-color: #00a800; }
+  .tui-table.striped-cyan tbody tr:nth-child(even) {
+    background-color: #00a8a8; }
+  .tui-table.striped-red tbody tr:nth-child(even) {
+    background-color: #a80000; }
+  .tui-table.striped-purple tbody tr:nth-child(even) {
+    background-color: #a800a8; }
+  .tui-table.striped-yellow tbody tr:nth-child(even) {
+    background-color: #a8a800; }
+  .tui-table.striped-white tbody tr:nth-child(even) {
+    background-color: #a8a8a8;
+    color: black; }
+  .tui-table.striped-orange tbody tr:nth-child(even) {
+    background-color: #a85600; }
 
 .tui-table tbody {
   background-color: inherit;
@@ -1080,6 +1120,11 @@ input[type=button] {
   padding: 0px 2px; }
 
 .tui-table thead {
+  background-color: inherit;
+  color: yellow;
+  text-align: center; }
+
+.tui-table tfoot {
   background-color: inherit;
   color: yellow;
   text-align: center; }
