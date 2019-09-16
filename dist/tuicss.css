@@ -527,9 +527,6 @@ input, select, textarea {
 .white-border-hover:hover {
   border-color: white !important; }
 
-.tui-no-padding {
-  padding: 0px !important; }
-
 .left {
   float: left !important; }
 
@@ -584,10 +581,16 @@ input, select, textarea {
 .static {
   position: static !important; }
 
-.tui-content {
+.no-shadow {
+  box-shadow: none !important; }
+
+.no-padding {
+  padding: 0px !important; }
+
+.content {
   padding: 12px; }
 
-.tui-disable-select {
+.disable-select {
   user-select: none;
   -webkit-user-select: none;
   -khtml-user-select: none;

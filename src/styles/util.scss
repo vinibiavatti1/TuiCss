@@ -1,9 +1,5 @@
 @import '../mixins.scss';
 
-.tui-no-padding {
-    padding: 0px!important;
-}
-
 .left {
     float: left!important;
 }
@@ -63,10 +59,16 @@
     position: static!important;
 }
 
-.tui-content {
+.no-shadow {
+    box-shadow: none!important;
+}
+.no-padding {
+    padding: 0px!important;
+}
+.content {
     padding: 12px;
 }
-.tui-disable-select {
+.disable-select {
     @include disable-select;
 }
 
