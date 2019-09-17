@@ -1,18 +1,22 @@
 @import '../variables.scss';
 
-/* Default */
-::-webkit-scrollbar {
-    width: 10px;
-}
-::-webkit-scrollbar-track {
-    background-image: $scroll-default-image;
-    background-repeat: repeat;
-}
-::-webkit-scrollbar-thumb {
-    background-color: $scroll-default-color;
-}
-::-webkit-scrollbar-thumb:hover {
-    background-color: $scroll-default-color;
+@if $scroll-default-tui {
+
+    /* Default */
+    ::-webkit-scrollbar {
+        width: 10px;
+    }
+    ::-webkit-scrollbar-track {
+        background-image: $scroll-default-image;
+        background-repeat: repeat;
+    }
+    ::-webkit-scrollbar-thumb {
+        background-color: $scroll-default-color;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+        background-color: $scroll-default-color;
+    }
+
 }
 
 /* Styles */

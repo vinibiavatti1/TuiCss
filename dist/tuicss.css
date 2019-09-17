@@ -57,40 +57,40 @@ input, select, textarea {
 /* Grid */
 /* Theme */
 .primary {
-  background-color: white; }
+  background-color: #0000a8; }
 
 .primary-text {
-  color: white; }
+  color: #0000a8; }
 
 .primary-border {
-  border-color: white; }
+  border-color: #0000a8; }
 
 .primary-hover:hover {
-  background-color: white; }
+  background-color: #0000a8; }
 
 .primary-text-hover:hover {
-  color: white; }
+  color: #0000a8; }
 
 .primary-border-hover:hover {
-  border-color: white; }
+  border-color: #0000a8; }
 
 .secondary {
-  background-color: #0000a8; }
+  background-color: #a8a8a8; }
 
 .secondary-text {
-  color: #0000a8; }
+  color: #a8a8a8; }
 
 .secondary-border {
-  border-color: #0000a8; }
+  border-color: #a8a8a8; }
 
 .secondary-hover:hover {
-  background-color: #0000a8; }
+  background-color: #a8a8a8; }
 
 .secondary-text-hover:hover {
-  color: #0000a8; }
+  color: #a8a8a8; }
 
 .secondary-border-hover:hover {
-  border-color: #0000a8; }
+  border-color: #a8a8a8; }
 
 .success {
   background-color: #00a800; }
