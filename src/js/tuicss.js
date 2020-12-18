@@ -1,5 +1,6 @@
 /**
  * Replacement for jQuery's $(document).ready() function.
+ * This is handy in making sure stuff fires after the DOM is ready to be touched.
  * Stolen from:https://stackoverflow.com/a/53601942/344028
  *
  * @param fn Callback.
@@ -18,36 +19,63 @@ function domReady(fn) {
  * TuiTabs controller
  */
 function tabsController() {
+    // Get all the tab elements (typically li tags).
     const tabs = document.getElementsByClassName('tui-tab');
 
-    for (const tab of tabs) {
-        tab.addEventListener('click', function (e) {
-            // Deactivate the tab.
-            tab.classList.remove('active');
+    if (!tabs.length) {
+        // No tabs found, return early and save a couple CPU cycles.
+        return;
+    }
 
+    for (const tab of tabs) {
+        // Add click listeners to them.
+        tab.addEventListener('click', function (e) {
+            // Remove the 'active' class from any and all tabs.
+            for (const otherTab of tabs) {
+                otherTab.classList.remove('active');
+            }
+
+            // Get the content element.
             const tabContents = document.getElementsByClassName('tui-tab-content');
 
-            for (const tabContent of tabContents) {
-                tabContent.style.display = 'none';
+            if (tabContents) {
+                for (const tabContent of tabContents) {
+                    // Hide all tab contents.
+                    tabContent.style.display = 'none';
+                }
+            } else {
+                throw 'No tab content elements found.'
             }
 
+            // Get the id of the tab contents we want to show.
             const tabContentId = e.target.getAttribute('data-tab-content');
-            const tabContent   = document.getElementById(tabContentId);
-            if (tabContent) {
-                tabContent.style.display = 'block';
-            }
 
-            // Set the clicked tab to have the active click for the next part.
+            if (tabContentId) {
+                const tabContent = document.getElementById(tabContentId);
+                if (tabContent) {
+                    // Show the tab contents.
+                    tabContent.style.display = 'block';
+                } else {
+                    throw 'No tab content element with id "' + tabContentId + '" found.';
+                }
+            }
+            // We are not going to throw an error here, since we could make the tab do something else that a tab
+            // normally wouldn't do.
+
+            // Set the clicked tab to have the 'active' class so we can use it in the next part.
             e.target.classList.add('active');
+
         });
     }
 
-
+    // Grab the first tab with the active class.
     const activeTab = document.querySelector('.tui-tab.active');
-
     if (activeTab) {
-        // There can only be one active tab, so click the first found.
+        // Now click it 'click' it.
         activeTab.click();
+    } else {
+        // Nothing found, just click the first tab foud.
+        tabs[0].click()
     }
 }
 
@@ -55,26 +83,32 @@ function tabsController() {
  * Date/time field controller
  */
 function datetimeController() {
+    // Get date/time elements.
     const clocks = document.getElementsByClassName('tui-datetime');
 
-    // No elements found, return early.
     if (!clocks.length) {
+        // No date time elements found, return early and save a couple CPU cycles.
         return;
     }
 
+    // Kick off our clock interval stuff.
     datetimeInterval();
     setInterval(datetimeInterval, 1000);
 
     function datetimeInterval() {
         for (const clock of clocks) {
+            // Set the interval.
             const interval = setInterval(() => {
+                // Technically we should have already returned earlier in the code, but to be on the safe side.
                 if (clock === null) {
                     clearInterval(interval);
                     return;
                 }
 
+                // Get the format we want to display in the element.
                 let format = clock.getAttribute('data-format');
 
+                // parse out the date and time into constants.
                 const today  = new Date();
                 const month  = (today.getMonth() + '').length === 2 ? today.getMonth() + 1 : '0' + (today.getMonth() + 1);
                 const day    = (today.getDay() + '').length === 2 ? today.getDay() + 1 : '0' + (today.getDay() + 1);
@@ -85,6 +119,7 @@ function datetimeController() {
                 const second = (today.getSeconds() + '').length === 2 ? today.getSeconds() : '0' + today.getSeconds();
                 const ampm   = parseInt(hour) >= 12 ? 'PM' : 'AM';
 
+                // Replace based on the format.
                 format = format.replace('M', month);
                 format = format.replace('d', day);
                 format = format.replace('y', year);
@@ -94,6 +129,7 @@ function datetimeController() {
                 format = format.replace('s', second);
                 format = format.replace('a', ampm);
 
+                // Show it in the element.
                 clock.innerHTML = format;
             });
         }
@@ -102,61 +138,108 @@ function datetimeController() {
 
 /**
  * Sidenav Controller
+ * There should only side navigation element at the moment.
  */
 function sidenavController() {
-    const sideNavButtons = document.getElementsByClassName('tui-sidenav-button');
+    // Get the side navigation button (there should be only one, but if not, we are getting the first one).
+    const sideNavButton = document.querySelector('.tui-sidenav-button');
 
-    for (const sideNavButton of sideNavButtons) {
-        sideNavButton.addEventListener('click', () => {
-            const sideNavs = document.getElementsByClassName('tui-sidenav');
-            for (const sideNav of sideNavs) {
-                if (sideNav.classList.contains('active')) {
-                    sideNav.classList.remove('active');
-                } else {
-                    sideNav.classList.add('active');
-                }
-            }
-        });
+    if (!sideNavButton) {
+        // No side navigation button found, return early and save a couple CPU cycles.
+        return;
     }
+
+    // Add the click event listener to the buttons.
+    sideNavButton.addEventListener('click', () => {
+        // Get the side navigation element (there should be only one, but if not, we are getting the first one).
+        const sideNav = document.querySelector('.tui-sidenav');
+
+        if (sideNav) {
+            if (sideNav.classList.contains('active')) {
+                sideNav.classList.remove('active');
+            } else {
+                sideNav.classList.add('active');
+            }
+        } else {
+            throw 'No sidenav element found.'
+        }
+    });
 }
 
 /**
  * Modal controller
  */
 function modalController() {
-    // Attach to the button that shows the modal.
+    // Get the overlap (overlay) element (there should be only one, but if not, we are getting the first one).
+    const tuiOverlap = document.querySelector('.tui-overlap');
+
+    if (!tuiOverlap) {
+        // No overlap found element, return early and save a couple CPU cycles.
+        return;
+    }
+
+    // Find modal buttons.
     const modalButtons = document.getElementsByClassName('tui-modal-button');
     for (const modalButton of modalButtons) {
+        // Add the click event listener to the buttons.
         modalButton.addEventListener('click', (e) => {
-            const tuiOverlaps = document.getElementsByClassName('tui-overlap');
-            for (const tuiOverlap of tuiOverlaps) {
-                tuiOverlap.classList.add('active');
-            }
+            // Show the overlap.
+            tuiOverlap.classList.add('active');
 
+            // Get the display element for the modal.
             const modalId = e.target.getAttribute('data-modal');
-            const modal   = document.getElementById(modalId);
-            modal.classList.add('active');
+
+            if (modalId) {
+                const modal = document.getElementById(modalId);
+
+                if (modal) {
+                    // Show it.
+                    modal.classList.add('active');
+                } else {
+                    throw 'No modal element with id of "' + modalId + '" found.';
+                }
+            } else {
+                throw 'Modal close button data-modal attribute is empty or not set.'
+            }
         });
     }
 
-    // Attach to the button that removes the modal.
+    // Find the close modal buttons.
     const modalCloseButtons = document.getElementsByClassName('tui-modal-close-button');
-    for (const modalCloseButton of modalCloseButtons) {
-        modalCloseButton.addEventListener('click', (e) => {
-            const tuiOverlaps = document.getElementsByClassName('tui-overlap');
-            for (const tuiOverlap of tuiOverlaps) {
-                tuiOverlap.classList.remove('active');
-            }
 
+    if (modalButtons.length > 0 && !modalCloseButtons.length) {
+        // A modal without a close button, is a bad modal.
+        throw 'No modal close buttons found.'
+    }
+
+    for (const modalCloseButton of modalCloseButtons) {
+        // Add the click event listener to the buttons.
+        modalCloseButton.addEventListener('click', (e) => {
+            // Hide the the overlap.
+            tuiOverlap.classList.remove('active');
+
+            // Get the display element id for the modal.
             const modalId = e.target.getAttribute('data-modal');
-            const modal   = document.getElementById(modalId);
-            modal.classList.remove('active');
+
+            if (modalId) {
+                // Get the modal element.
+                const modal = document.getElementById(modalId);
+
+                if (modal) {
+                    // Hide it.
+                    modal.classList.remove('active');
+                } else {
+                    throw 'No modal element with id of "' + modalId + '" found.';
+                }
+            } else {
+                throw 'Modal close button data-modal attribute is empty or not set.'
+            }
         });
     }
 }
 
 /**
- * Init: This is at the bottom to make sure the functions are parsed. It's a CYA.
+ * Init: This is at the bottom to make sure it is fired correctly.
  */
 domReady(function () {
     tabsController();
