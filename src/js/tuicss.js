@@ -21,34 +21,33 @@ function tabsController() {
     const tabs = document.getElementsByClassName('tui-tab');
 
     for (const tab of tabs) {
-        tab.addEventListener('click', function () {
+        tab.addEventListener('click', function (e) {
+            // Deactivate the tab.
+            tab.classList.remove('active');
+
             const tabContents = document.getElementsByClassName('tui-tab-content');
 
-            for (let tabContent of tabContents) {
+            for (const tabContent of tabContents) {
                 tabContent.style.display = 'none';
             }
 
-            const tabContentId = this.getAttribute('data-tab-content');
+            const tabContentId = e.target.getAttribute('data-tab-content');
             const tabContent   = document.getElementById(tabContentId);
-
             if (tabContent) {
                 tabContent.style.display = 'block';
             }
 
-            const otherTabs = document.getElementsByClassName('tui-tab');
-
-            for (const otherTab of otherTabs) {
-                otherTab.classList.remove('active');
-            }
-
-            this.classList.add('active');
+            // Set the clicked tab to have the active click for the next part.
+            e.target.classList.add('active');
         });
     }
 
+
     const activeTab = document.querySelector('.tui-tab.active');
 
-    if (activeTab !== null) {
-        activeTab[0].click();
+    if (activeTab) {
+        // There can only be one active tab, so click the first found.
+        activeTab.click();
     }
 }
 
@@ -125,6 +124,7 @@ function sidenavController() {
  * Modal controller
  */
 function modalController() {
+    // Attach to the button that shows the modal.
     const modalButtons = document.getElementsByClassName('tui-modal-button');
     for (const modalButton of modalButtons) {
         modalButton.addEventListener('click', (e) => {
@@ -133,12 +133,13 @@ function modalController() {
                 tuiOverlap.classList.add('active');
             }
 
-            const modalId = e.getAttribute('data-modal');
+            const modalId = e.target.getAttribute('data-modal');
             const modal   = document.getElementById(modalId);
             modal.classList.add('active');
         });
     }
 
+    // Attach to the button that removes the modal.
     const modalCloseButtons = document.getElementsByClassName('tui-modal-close-button');
     for (const modalCloseButton of modalCloseButtons) {
         modalCloseButton.addEventListener('click', (e) => {
@@ -147,7 +148,7 @@ function modalController() {
                 tuiOverlap.classList.remove('active');
             }
 
-            const modalId = e.getAttribute('data-modal');
+            const modalId = e.target.getAttribute('data-modal');
             const modal   = document.getElementById(modalId);
             modal.classList.remove('active');
         });
