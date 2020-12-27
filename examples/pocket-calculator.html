@@ -42,11 +42,11 @@
     </div>
     <script>
         function digit(digit) {
-            let val = $("#display").val();
-            $("#display").val(digit + "" + val);
+            let val = document.getElementById("display").value;
+            document.getElementById("display").value = digit + "" + val;
         }
         function clearDisplay() {
-            $("#display").val("");
+            document.getElementById("display").value = "";
         }
     </script>
 </body>
