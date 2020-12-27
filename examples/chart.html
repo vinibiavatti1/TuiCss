@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en" class="tui-bg-blue-black">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Chart Example</title>
+    <script src="plugins/jquery-3.4.1.min.js"></script>
+    <script src="../dist/tuicss.min.js"></script>
+    <link rel="stylesheet" href="../dist/tuicss.min.css">
+    <style>
+        .tui-chart-vertical {
+            position: relative;
+            background-color: black;
+        }
+        .tui-chart-horizontal {
+            position: relative;
+            background-color: black;
+        }
+        .tui-chart-vertical .tui-chart-display {
+            display: flex;
+            position: absolute;
+            top: 0px;
+            left: 50px;
+            right: 0px;
+            bottom: 30px;
+            align-items: flex-end;
+            border-bottom: 2px solid white;
+            border-left: 2px solid white;
+        }
+        .tui-chart-horizontal .tui-chart-display {
+            display: flex;
+            position: absolute;
+            flex-direction: column;
+            top: 0px;
+            left: 50px;
+            right: 0px;
+            bottom: 30px;
+            align-items: stretch;
+            border-bottom: 2px solid white;
+            border-left: 2px solid white;
+        }
+        .tui-chart-x-axis {
+            display: flex;
+            position: absolute;
+            height: 30px;
+            left: 50px;
+            right: 0px;
+            bottom: 0px;
+            line-height: 30px;
+        }
+        .tui-chart-y-axis {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            bottom: 30px;
+            width: 50px;
+        }
+
+        .tui-chart-vertical .tui-chart-x-axis .tui-chart-legend {
+            flex-basis: 100%;
+            text-align: center;
+        }
+        .tui-chart-vertical .tui-chart-y-axis .tui-chart-legend {
+            flex: 1;
+            text-align: right;
+            padding-right: 2px;
+            display: flex;
+            align-items: flex-start;
+            justify-content: flex-end;
+        }
+        .tui-chart-horizontal .tui-chart-x-axis .tui-chart-legend {
+            flex-basis: 100%;
+            text-align: right;
+        }
+        .tui-chart-horizontal .tui-chart-y-axis .tui-chart-legend {
+            flex: 1;
+            text-align: right;
+            padding-right: 2px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+        }
+
+        .tui-chart-vertical .tui-chart-display .tui-chart-value {
+            margin: 0px 30px;
+            flex-basis: 100%;
+            text-align: center;
+        }
+        .tui-chart-horizontal .tui-chart-display .tui-chart-value {
+            margin: 5px 0px;
+            flex: 1;
+            text-align: right;
+            display: flex;
+            align-items: center;
+            align-content: flex-start;
+            justify-content: flex-end;
+        }
+    </style>
+</head>
+
+<body class="center">
+    <div style="margin-top: 50px"></div>
+
+    <div class="tui-window black-168 left-align">
+        <fieldset class="tui-fieldset">
+            <legend class="">Vertical Bar Chart</legend>
+            <div class="tui-chart-vertical" style="width: 500px; height: 200px;">
+                <div class="tui-chart-display">
+                    <div class="tui-chart-value red-168" style="height: 80%;">80%</div>
+                    <div class="tui-chart-value green-168" style="height: 60%;">60%</div>
+                    <div class="tui-chart-value blue-168" style="height: 100%;">100%</div>
+                </div>
+                <div class="tui-chart-y-axis">
+                    <div class="tui-chart-legend">100%</div>
+                    <div class="tui-chart-legend">75%</div>
+                    <div class="tui-chart-legend">50%</div>
+                    <div class="tui-chart-legend">25%</div>
+                </div>
+                <div class="tui-chart-x-axis">
+                    <div class="tui-chart-legend">2018</div>
+                    <div class="tui-chart-legend">2019</div>
+                    <div class="tui-chart-legend">2020</div>
+                </div>
+            </div>
+        </fieldset>
+    </div>
+    <br><br>
+
+    <div class="tui-window black-168 left-align">
+        <fieldset class="tui-fieldset">
+            <legend class="">Horizontal Bar Chart</legend>
+            <div class="tui-chart-horizontal" style="width: 500px; height: 200px;">
+                <div class="tui-chart-display">
+                    <div class="tui-chart-value red-168" style="width: 80%;">80%</div>
+                    <div class="tui-chart-value green-168" style="width: 60%;">60%</div>
+                    <div class="tui-chart-value blue-168" style="width: 100%;">100%</div>
+                </div>
+                <div class="tui-chart-y-axis">
+                    <div class="tui-chart-legend">2018</div>
+                    <div class="tui-chart-legend">2019</div>
+                    <div class="tui-chart-legend">2020</div>
+                </div>
+                <div class="tui-chart-x-axis">
+                    <div class="tui-chart-legend">25%</div>
+                    <div class="tui-chart-legend">50%</div>
+                    <div class="tui-chart-legend">75%</div>
+                    <div class="tui-chart-legend">100%</div>
+                </div>
+            </div>
+        </fieldset>
+    </div>
+</body>
+</html>
