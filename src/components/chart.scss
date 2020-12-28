@@ -19,6 +19,13 @@
     align-items: flex-end;
     border-bottom: 2px solid white;
     border-left: 2px solid white;
+
+    &.no-x-axis {
+        bottom: 0px;
+    }
+    &.no-y-axis {
+        left: 0px;
+    }
 }
 .tui-chart-horizontal .tui-chart-display {
     display: flex;
@@ -31,6 +38,13 @@
     align-items: stretch;
     border-bottom: 2px solid white;
     border-left: 2px solid white;
+
+    &.no-x-axis {
+        bottom: 0px;
+    }
+    &.no-y-axis {
+        left: 0px;
+    }
 }
 
 /* Chart X axis */
@@ -83,16 +97,16 @@
 
 /* Chart value */
 .tui-chart-vertical .tui-chart-display .tui-chart-value {
-    margin: 0px 30px;
     flex-basis: 100%;
     text-align: center;
+    overflow: hidden;
 }
 .tui-chart-horizontal .tui-chart-display .tui-chart-value {
-    margin: 5px 0px;
     flex: 1;
     text-align: right;
     display: flex;
     align-items: center;
     align-content: flex-start;
     justify-content: flex-end;
+    overflow: hidden;
 }
