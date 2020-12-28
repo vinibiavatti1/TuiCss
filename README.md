@@ -8,6 +8,8 @@
 
 <p align="center">
   Text-based user interface CSS library
+  <br>
+  <a href="https://github.com/vinibiavatti1/TuiCss/wiki"><strong>-- Documentation --</strong></a>
 </p>
 
 ### About
