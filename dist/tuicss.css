@@ -1206,7 +1206,8 @@ input[type=button] {
 .tui-screen-640-480,
 .tui-screen-800-600,
 .tui-screen-1024-768 {
-  position: relative; }
+  position: relative;
+  overflow: hidden; }
   .tui-screen-640-480.bordered,
   .tui-screen-800-600.bordered,
   .tui-screen-1024-768.bordered {
@@ -1994,7 +1995,7 @@ input[type=button] {
 
 /* Chart legends */
 .tui-chart-vertical .tui-chart-x-axis .tui-chart-legend {
-  flex-basis: 100%;
+  flex: 0 1 100%;
   text-align: center; }
 
 .tui-chart-vertical .tui-chart-y-axis .tui-chart-legend {
@@ -2006,7 +2007,7 @@ input[type=button] {
   justify-content: flex-end; }
 
 .tui-chart-horizontal .tui-chart-x-axis .tui-chart-legend {
-  flex-basis: 100%;
+  flex: 0 1 100%;
   text-align: right; }
 
 .tui-chart-horizontal .tui-chart-y-axis .tui-chart-legend {
@@ -2019,7 +2020,7 @@ input[type=button] {
 
 /* Chart value */
 .tui-chart-vertical .tui-chart-display .tui-chart-value {
-  flex-basis: 100%;
+  flex: 0 1 100%;
   text-align: center;
   overflow: hidden; }
 

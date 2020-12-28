@@ -71,7 +71,7 @@
 
 /* Chart legends */
 .tui-chart-vertical .tui-chart-x-axis .tui-chart-legend {
-    flex-basis: 100%;
+    flex: 0 1 100%;
     text-align: center;
 }
 .tui-chart-vertical .tui-chart-y-axis .tui-chart-legend {
@@ -83,7 +83,7 @@
     justify-content: flex-end;
 }
 .tui-chart-horizontal .tui-chart-x-axis .tui-chart-legend {
-    flex-basis: 100%;
+    flex: 0 1 100%;
     text-align: right;
 }
 .tui-chart-horizontal .tui-chart-y-axis .tui-chart-legend {
@@ -97,7 +97,7 @@
 
 /* Chart value */
 .tui-chart-vertical .tui-chart-display .tui-chart-value {
-    flex-basis: 100%;
+    flex: 0 1 100%;
     text-align: center;
     overflow: hidden;
 }
