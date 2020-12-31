@@ -10,7 +10,7 @@
   Text-based user interface CSS library
   <br>
   <a href="https://github.com/vinibiavatti1/TuiCss/wiki"><strong>-- Documentation --</strong></a>
-  <br>
+  <br><br>
   <a href="https://badge.fury.io/js/tuicss">
     <img src="https://badge.fury.io/js/tuicss.svg" alt="npm version badge">
   </a>
