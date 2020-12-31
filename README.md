@@ -18,5 +18,12 @@ TuiCss is a library focused to create web applications using an interface based 
 
 <img src="https://raw.githubusercontent.com/vinibiavatti1/TuiCss/develop/resources/TUICSS%20Demo.png" width="676">
 
+### Getting Started
+To start to use the TuiCss in your project, you can just download the repository content and import the files that are in the dist folder with the html directives. On the other hand, you can install the package with NPM using the following command:
+
+```bash
+$ npm install tuicss
+```
+
 ### Documentation
 Check the [repository wiki](https://github.com/vinibiavatti1/TuiCss/wiki) to access the documentation, components index, examples, styles, or to know how to contribute for this project.
