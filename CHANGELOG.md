@@ -2,12 +2,12 @@
 ### This is the change log of TuiCss. Here you can find the documentations of the feature of each released version
 
 #### 2.0.0
+- Jquery removed (Now use vanilla Javascript)
 - Chart example page
-- Contributing markdown
 - Readme update
 - Changelog markdown
-- Jquery removed (Vanilla Javascript)
 - Chart component
+- NPM Package
 
 #### 1.0.0
 - Utilities
