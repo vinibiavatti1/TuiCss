@@ -1,3 +1,5 @@
+@import '../mixins.scss';
+
 .tui-fieldset {
     border: 6px white double;
     padding: 12px;
@@ -36,6 +38,7 @@
     cursor: pointer;
     outline:0;
     padding: 2px;
+    @include disable-select;
     
     &.left {
         right: initial;

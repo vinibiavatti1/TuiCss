@@ -15,6 +15,7 @@
 .tui-screen-800-600,
 .tui-screen-1024-768 {
     position: relative;
+    overflow: hidden;
     &.bordered{
         border: 2px solid black;
     }

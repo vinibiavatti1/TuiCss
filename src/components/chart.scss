@@ -1,0 +1,112 @@
+/* Chart container */
+.tui-chart-vertical {
+    position: relative;
+    background-color: black;
+}
+.tui-chart-horizontal {
+    position: relative;
+    background-color: black;
+}
+
+/* Chart display */
+.tui-chart-vertical .tui-chart-display {
+    display: flex;
+    position: absolute;
+    top: 0px;
+    left: 50px;
+    right: 0px;
+    bottom: 30px;
+    align-items: flex-end;
+    border-bottom: 2px solid white;
+    border-left: 2px solid white;
+
+    &.no-x-axis {
+        bottom: 0px;
+    }
+    &.no-y-axis {
+        left: 0px;
+    }
+}
+.tui-chart-horizontal .tui-chart-display {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    top: 0px;
+    left: 50px;
+    right: 0px;
+    bottom: 30px;
+    align-items: stretch;
+    border-bottom: 2px solid white;
+    border-left: 2px solid white;
+
+    &.no-x-axis {
+        bottom: 0px;
+    }
+    &.no-y-axis {
+        left: 0px;
+    }
+}
+
+/* Chart X axis */
+.tui-chart-x-axis {
+    display: flex;
+    position: absolute;
+    height: 30px;
+    left: 50px;
+    right: 0px;
+    bottom: 0px;
+    line-height: 30px;
+}
+
+/* Chart Y axis */
+.tui-chart-y-axis {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    bottom: 30px;
+    width: 50px;
+}
+
+/* Chart legends */
+.tui-chart-vertical .tui-chart-x-axis .tui-chart-legend {
+    flex: 0 1 100%;
+    text-align: center;
+}
+.tui-chart-vertical .tui-chart-y-axis .tui-chart-legend {
+    flex: 1;
+    text-align: right;
+    padding-right: 2px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+}
+.tui-chart-horizontal .tui-chart-x-axis .tui-chart-legend {
+    flex: 0 1 100%;
+    text-align: right;
+}
+.tui-chart-horizontal .tui-chart-y-axis .tui-chart-legend {
+    flex: 1;
+    text-align: right;
+    padding-right: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+/* Chart value */
+.tui-chart-vertical .tui-chart-display .tui-chart-value {
+    flex: 0 1 100%;
+    text-align: center;
+    overflow: hidden;
+}
+.tui-chart-horizontal .tui-chart-display .tui-chart-value {
+    flex: 1;
+    text-align: right;
+    display: flex;
+    align-items: center;
+    align-content: flex-start;
+    justify-content: flex-end;
+    overflow: hidden;
+}

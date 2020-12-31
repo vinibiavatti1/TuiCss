@@ -1,4 +1,3 @@
-
 const { series, src, dest } = require('gulp');
 const sass = require('gulp-sass');
 const gulpClean = require('gulp-clean');
@@ -13,13 +12,14 @@ function clean() {
         .pipe(gulpClean());
 }
 
-// Compile scss
+// Compile scss and copy to dist folder (.css)
 function sassCompile() {
     return src('src/tuicss.scss')
         .pipe(sass())
         .pipe(dest(distPath));
 }
 
+// Minify css and copy to dist folder (.min.css)
 function minifyCss() {
     return src(distPath + '/tuicss.css')
         .pipe(cleanCss())
@@ -29,11 +29,13 @@ function minifyCss() {
         .pipe(dest(distPath));
 }
 
+// Copy js script to dist folder (.js)
 function copyScript() {
     return src('src/js/tuicss.js')
         .pipe(dest(distPath));
 }
 
+// Minify js script and copy to dist folder (.min.js)
 function minifyJs() {
     return src(distPath + '/tuicss.js')
         .pipe(gulpMinify({
@@ -44,16 +46,19 @@ function minifyJs() {
         .pipe(dest(distPath));
 }
 
+// Copy images to dist folder (/images)
 function copyImages() {
     return src('src/images/*')
         .pipe(dest(distPath + "/images"));
 }
 
+// Copy fonts to dist folder (/fonts)
 function copyFonts() {
     return src('src/fonts/*')
         .pipe(dest(distPath + "/fonts"));
 }
 
+// Export
 exports.default = series(clean, sassCompile, minifyCss, copyScript, minifyJs, copyImages, copyFonts);
 
 

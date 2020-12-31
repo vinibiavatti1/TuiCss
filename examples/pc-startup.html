@@ -4,7 +4,6 @@
 <head>
     <meta charset="UTF-8">
     <title>PC Startup Example</title>
-    <script src="plugins/jquery-3.4.1.min.js"></script>
     <script src="../dist/tuicss.min.js"></script>
     <link rel="stylesheet" href="../dist/tuicss.min.css">
 </head>
@@ -34,6 +33,9 @@
             Detecting Secondary Master ...: Skip<br>
             Detecting Secondaty Slave ....: None
         </div>
+        <div id="session-5" style="display: none">
+            <br>Found virus! The PC cannot be started. I'm Sorry :(
+        </div>
         <div class="tui-statusbar absolute black white-text">
             <ul>
                 <li style="margin-left: 0px">Press <b>DEL</b> to enter SETUP, <b>Alt+F2</b> to enter EZ flash utility
@@ -46,11 +48,16 @@
     </div>
 </body>
 <script>
-    $(document).ready(function() {
-        setTimeout(function() { $("#session-1").show(); }, 300);
-        setTimeout(function() { $("#session-2").show(); }, 400);
-        setTimeout(function() { $("#session-3").show(); }, 450);
-        setTimeout(function() { $("#session-4").show(); }, 870);
-    });
+    window.onload = function() {
+        setTimeout(function() { showSession("session-1"); }, 300);
+        setTimeout(function() { showSession("session-2"); }, 400);
+        setTimeout(function() { showSession("session-3"); }, 450);
+        setTimeout(function() { showSession("session-4"); }, 870);
+        setTimeout(function() { showSession("session-5"); }, 1500);
+    };
+    function showSession(id) {
+        const session = document.getElementById(id);
+        session.style.display = "block";
+    }
 </script>
 </html>

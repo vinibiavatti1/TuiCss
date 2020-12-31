@@ -4,7 +4,6 @@
 <head>
     <meta charset="UTF-8">
     <title>Pocket Calculator Example</title>
-    <script src="plugins/jquery-3.4.1.min.js"></script>
     <script src="../dist/tuicss.min.js"></script>
     <link rel="stylesheet" href="../dist/tuicss.min.css">
 </head>
@@ -43,11 +42,11 @@
     </div>
     <script>
         function digit(digit) {
-            let val = $("#display").val();
-            $("#display").val(digit + "" + val);
+            let val = document.getElementById("display").value;
+            document.getElementById("display").value = digit + "" + val;
         }
         function clearDisplay() {
-            $("#display").val("");
+            document.getElementById("display").value = "";
         }
     </script>
 </body>
