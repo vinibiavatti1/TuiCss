@@ -30,6 +30,12 @@ function tabsController() {
     for (const tab of tabs) {
         // Add click listeners to them.
         tab.addEventListener('click', function (e) {
+
+            // Check if the clicked tab is disabled
+            if(e.target.classList.contains("disabled")) {
+                return;
+            }
+
             // Remove the 'active' class from any and all tabs.
             for (const otherTab of tabs) {
                 otherTab.classList.remove('active');

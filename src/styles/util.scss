@@ -65,6 +65,9 @@
 .no-padding {
     padding: 0px!important;
 }
+.no-border {
+    border: none!important;
+}
 .content {
     padding: 12px;
 }
@@ -77,4 +80,8 @@
 }
 .cursor-default {
     cursor: default !important;
+}
+
+.disabled {
+    cursor: not-allowed!important;
 }

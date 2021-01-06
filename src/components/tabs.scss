@@ -20,6 +20,9 @@
         background-color: rgb(168, 168, 168);
         color: rgb(0, 0, 168);
     }
+    &.disabled {
+        text-decoration: line-through;
+    }
 }
 .tui-tab-content {
     display: none;

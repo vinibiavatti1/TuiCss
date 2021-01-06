@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Forecast Example</title>
+    <script src="../dist/tuicss.min.js"></script>
+    <link rel="stylesheet" href="../dist/tuicss.min.css">
+    <style>
+        th, td {
+            padding: 10px!important;
+            border: none!important;
+        }
+        .tui-progress-bar {
+            margin-bottom: -4px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="tui-screen-800-600 bordered black-255" style="padding: 2px;">
+        <div class="red-168 full-width white-text" style="padding: 0px 10px;">
+            FORECAST 1.0
+        </div>
+        <br>
+        <table class="tui-table full-width no-border">
+            <thead class="white-255-text tui-border-double orange-168-border" style="margin-bottom: 5px;">
+                <tr class="left-align">
+                    <th>#</th>
+                    <th>LOCATION</th>
+                    <th>TEMPERATURE</th>
+                    <th>STATUS</th>
+                </tr>
+            </thead>
+            <tbody class="tui-border-double orange-168-border">
+                <tr>
+                    <td class="red-168-text">1</td>
+                    <td>Lisbon</td>
+                    <td>
+                        <span class="green-168-text">&nbsp;8.0</span> 
+                        [
+                        <div class="tui-progress-bar inline-block tui-bg-red-black" style="width: 350px;">
+                            <span class="tui-progress red-255" style="width: 58%"></span>
+                        </div> 
+                        ]
+                    </td>
+                    <td class="blue-255-text">COLD</td>
+                </tr>
+                <tr>
+                    <td class="red-168-text">2</td>
+                    <td>Vancouver</td>
+                    <td>
+                        <span class="green-168-text">&nbsp;9.0</span> 
+                        [
+                        <div class="tui-progress-bar inline-block tui-bg-red-black" style="width: 350px;">
+                            <span class="tui-progress red-255" style="width: 59%"></span>
+                        </div> 
+                        ]
+                    </td>
+                    <td class="blue-255-text">COLD</td>
+                </tr>
+                <tr>
+                    <td class="red-168-text">3</td>
+                    <td>Rio</td>
+                    <td>
+                        <span class="green-168-text">31.0</span> 
+                        [
+                        <div class="tui-progress-bar inline-block tui-bg-red-black" style="width: 350px;">
+                            <span class="tui-progress red-255" style="width: 81%"></span>
+                        </div> 
+                        ]
+                    </td>
+                    <td class="yellow-255-text">WARM</td>
+                </tr>
+                <tr>
+                    <td class="red-168-text">4</td>
+                    <td>Sydney</td>
+                    <td>
+                        <span class="green-168-text">22.0</span> 
+                        [
+                        <div class="tui-progress-bar inline-block tui-bg-red-black" style="width: 350px;">
+                            <span class="tui-progress red-255" style="width: 72%"></span>
+                        </div> 
+                        ]
+                    </td>
+                    <td class="yellow-255-text">WARM</td>
+                </tr>
+                <tr>
+                    <td class="red-168-text">5</td>
+                    <td>New York</td>
+                    <td>
+                        <span class="green-168-text">&nbsp;7.0</span> 
+                        [
+                        <div class="tui-progress-bar inline-block tui-bg-red-black" style="width: 350px;">
+                            <span class="tui-progress red-255" style="width: 57%"></span>
+                        </div> 
+                        ]
+                    </td>
+                    <td class="blue-255-text">COLD</td>
+                </tr>
+                <tr>
+                    <td class="red-168-text">6</td>
+                    <td>London</td>
+                    <td>
+                        <span class="green-168-text">&nbsp;6.0</span> 
+                        [
+                        <div class="tui-progress-bar inline-block tui-bg-red-black" style="width: 350px;">
+                            <span class="tui-progress red-255" style="width: 56%"></span>
+                        </div> 
+                        ]
+                    </td>
+                    <td class="blue-255-text">COLD</td>
+                </tr>
+                <tr>
+                    <td class="red-168-text">7</td>
+                    <td>Paris</td>
+                    <td>
+                        <span class="green-168-text">&nbsp;4.0</span> 
+                        [
+                        <div class="tui-progress-bar inline-block tui-bg-red-black" style="width: 350px;">
+                            <span class="tui-progress red-255" style="width: 54%"></span>
+                        </div> 
+                        ]
+                    </td>
+                    <td class="cyan-255-text">VERY COLD</td>
+                </tr>
+                <tr>
+                    <td class="red-168-text">8</td>
+                    <td>Casablanca</td>
+                    <td>
+                        <span class="green-168-text">17.0</span> 
+                        [
+                        <div class="tui-progress-bar inline-block tui-bg-red-black" style="width: 350px;">
+                            <span class="tui-progress red-255" style="width: 67%"></span>
+                        </div> 
+                        ]
+                    </td>
+                    <td class="green-168-text">NORMAL</td>
+                </tr>
+                <tr>
+                    <td class="red-168-text">9</td>
+                    <td>Reykjavik</td>
+                    <td>
+                        <span class="green-168-text">-1.0</span> 
+                        [
+                        <div class="tui-progress-bar inline-block tui-bg-red-black" style="width: 350px;">
+                            <span class="tui-progress red-255" style="width: 49%"></span>
+                        </div> 
+                        ]
+                    </td>
+                    <td class="cyan-255-text">VERY COLD</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="purple-168 full-width white-text" style="padding: 0px 10px; margin-top: 2px;">
+            <span class="red-168">HIGH</span>: Rio 31.0<br>
+            <span class="cyan-168">LESS</span>: Reykjavik -1.0
+        </div>
+        <br>
+        <div class="tui-window full-width no-shadow black">
+            <fieldset class="tui-fieldset center">
+                <button class="tui-button left">Previous</button>
+                <span class="center">9/201 records</span>
+                <button class="tui-button right">Next</button>
+            </fieldset>
+        </div>
+        <div class="red-168 full-width white-text" style="padding: 0px 10px;">
+            FORECAST 1.0
+        </div>
+    </div>
+</body>
+</html>
