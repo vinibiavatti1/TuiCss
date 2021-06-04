@@ -8,6 +8,9 @@
     color: white;
     padding-left: 30px;
     @include disable-select;
+    &.disabled {
+        color: rgb(168, 168, 168)
+    }
 }
 .tui-radio input {
     position: absolute;
@@ -15,6 +18,7 @@
     cursor: pointer;
     top: 0px;
     left: 0px;
+    pointer-events: none;
 }
 .tui-radio span {
     position: absolute;

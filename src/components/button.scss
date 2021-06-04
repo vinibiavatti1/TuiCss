@@ -10,7 +10,11 @@
     cursor: pointer;
     text-align: center;
     box-shadow: 10px 10px black;
+    border-radius: 0px;
     @include disable-select;
+    &.disabled {
+        text-decoration: line-through;
+    }
 }
 .tui-button:active {
     background-color: rgb(0, 168, 168)!important;

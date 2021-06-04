@@ -587,6 +587,9 @@ input, select, textarea {
 .no-padding {
   padding: 0px !important; }
 
+.no-border {
+  border: none !important; }
+
 .content {
   padding: 12px; }
 
@@ -603,6 +606,9 @@ input, select, textarea {
 .cursor-default {
   cursor: default !important; }
 
+.disabled {
+  cursor: not-allowed !important; }
+
 /* Components */
 .tui-button {
   display: inline-block;
@@ -614,11 +620,14 @@ input, select, textarea {
   cursor: pointer;
   text-align: center;
   box-shadow: 10px 10px black;
+  border-radius: 0px;
   user-select: none;
   -webkit-user-select: none;
   -khtml-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none; }
+  .tui-button.disabled {
+    text-decoration: line-through; }
 
 .tui-button:active {
   background-color: #00a8a8 !important;
@@ -648,13 +657,16 @@ input[type=button] {
   -khtml-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none; }
+  .tui-checkbox.disabled {
+    color: #a8a8a8; }
 
 .tui-checkbox input {
   position: absolute;
   opacity: 0;
   cursor: pointer;
   top: 0px;
-  left: 0px; }
+  left: 0px;
+  pointer-events: none; }
 
 .tui-checkbox span {
   position: absolute;
@@ -787,7 +799,10 @@ input[type=button] {
   color: white;
   outline: 0;
   border: none;
-  padding: 1px; }
+  border-radius: 0px; }
+  .tui-input.disabled {
+    background-color: #a8a8a8;
+    color: black; }
 
 .tui-input:focus {
   background-color: yellow !important;
@@ -888,13 +903,16 @@ input[type=button] {
   -khtml-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none; }
+  .tui-radio.disabled {
+    color: #a8a8a8; }
 
 .tui-radio input {
   position: absolute;
   opacity: 0;
   cursor: pointer;
   top: 0px;
-  left: 0px; }
+  left: 0px;
+  pointer-events: none; }
 
 .tui-radio span {
   position: absolute;
@@ -1172,6 +1190,8 @@ input[type=button] {
   .tui-tab.active {
     background-color: #a8a8a8;
     color: #0000a8; }
+  .tui-tab.disabled {
+    text-decoration: line-through; }
 
 .tui-tab-content {
   display: none; }
@@ -1182,6 +1202,9 @@ input[type=button] {
   padding: 0px;
   color: yellow;
   outline: none; }
+  .tui-textarea.disabled {
+    background-color: #a8a8a8;
+    color: black; }
 
 .tui-window {
   background-color: #0000a8;

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="tui-bg-blue-black">
+<html lang="en" class="tui-bg-blue-black tui-cursor">
 
 <head>
     <meta charset="UTF-8">
@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../dist/tuicss.min.css">
     <style>
         .tui-input {
-            width: 300px;
+            width: 430px;
         }
     </style>
 </head>
@@ -18,6 +18,7 @@
         <fieldset class="tui-fieldset">
             <legend class="center">Form</legend>
             Text.......: <input class="tui-input" value="text" /><br>
+            Disabled...: <input class="tui-input disabled" disabled value="disabled" /><br>
             Number.....: <input class="tui-input" type="number" value="25" /><br>
             Password...: <input class="tui-input" type="password" value="12345" /><br>
             Color......: <input class="tui-input" type="color" value="#00FF00" /><br>
@@ -25,6 +26,11 @@
                 <option>First</option>
                 <option>Second</option>
                 <option>Third</option>
+                <optgroup label="Group">
+                    <option>First</option>
+                    <option>Second</option>
+                    <option>Third</option>
+                </optgroup>
             </select><br>
             Date.......: <input class="tui-input" type="date" value="2019-01-01" /><br>
             Time.......: <input class="tui-input" type="datetime-local" value="2019-01-01T12:00" />
@@ -39,8 +45,8 @@
                     <input type="checkbox" />
                     <span></span>
                 </label>
-                <label class="tui-checkbox">Third
-                    <input type="checkbox" />
+                <label class="tui-checkbox disabled">Disabled
+                    <input type="checkbox" disabled />
                     <span></span>
                 </label>
             </fieldset>
@@ -55,14 +61,17 @@
                     <input type="radio" name="radio" />
                     <span></span>
                 </label>
-                <label class="tui-radio">Third
-                    <input type="radio" name="radio" />
+                <label class="tui-radio disabled">Disabled
+                    <input type="radio" name="radio" disabled />
                     <span></span>
                 </label>
             </fieldset>
             <br>
             Textarea<br>
-            <textarea class="tui-input" style="width: 100%"></textarea>
+            <textarea class="tui-input" style="width: 100%">Content ...</textarea>
+            <br>
+            Disabled Textarea<br>
+            <textarea class="tui-input disabled" disabled style="width: 100%">Disabled</textarea>
             <br>
             Multiple<br>
             <select multiple class="tui-input" style="width: 100%">
@@ -70,6 +79,11 @@
                 <option>First</option>
                 <option>Second</option>
                 <option>Third</option>
+                <optgroup label="Group">
+                    <option>First</option>
+                    <option>Second</option>
+                    <option>Third</option>
+                </optgroup>
             </select><br>
             File <input class="tui-input full-width" type="file" />
         </fieldset>

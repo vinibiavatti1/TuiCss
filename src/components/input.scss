@@ -3,7 +3,11 @@
     color: white;
     outline:0;
     border: none;
-    padding: 1px;
+    border-radius: 0px;
+    &.disabled {
+        background-color: rgb(168, 168, 168);
+        color: black;
+    }
 }
 .tui-input:focus {
     background-color: rgb(255, 255, 0)!important;
