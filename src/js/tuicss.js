@@ -103,41 +103,36 @@ function datetimeController() {
 
     function datetimeInterval() {
         for (const clock of clocks) {
-            // Set the interval.
-            const interval = setInterval(() => {
-                // Technically we should have already returned earlier in the code, but to be on the safe side.
-                if (clock === null) {
-                    clearInterval(interval);
-                    return;
-                }
+            if (clock === null) {
+                return;
+            }
 
-                // Get the format we want to display in the element.
-                let format = clock.getAttribute('data-format');
+            // Get the format we want to display in the element.
+            let format = clock.getAttribute('data-format');
 
-                // parse out the date and time into constants.
-                const today  = new Date();
-                const month  = (today.getMonth() + '').length === 2 ? today.getMonth() + 1 : '0' + (today.getMonth() + 1);
-                const day    = (today.getDay() + '').length === 2 ? today.getDay() + 1 : '0' + (today.getDay() + 1);
-                const year   = today.getFullYear() + '';
-                const hour   = (today.getHours() + '').length === 2 ? today.getHours() : '0' + today.getHours();
-                const hour12 = (parseInt(hour) + 24) % '12' || '12';
-                const minute = (today.getMinutes() + '').length === 2 ? today.getMinutes() : '0' + today.getMinutes();
-                const second = (today.getSeconds() + '').length === 2 ? today.getSeconds() : '0' + today.getSeconds();
-                const ampm   = parseInt(hour) >= 12 ? 'PM' : 'AM';
+            // parse out the date and time into constants.
+            const today = new Date();
+            const month = (today.getMonth() + '').length === 2 ? today.getMonth() + 1 : '0' + (today.getMonth() + 1);
+            const day = (today.getDay() + '').length === 2 ? today.getDay() + 1 : '0' + (today.getDay() + 1);
+            const year = today.getFullYear() + '';
+            const hour = (today.getHours() + '').length === 2 ? today.getHours() : '0' + today.getHours();
+            const hour12 = (parseInt(hour) + 24) % '12' || '12';
+            const minute = (today.getMinutes() + '').length === 2 ? today.getMinutes() : '0' + today.getMinutes();
+            const second = (today.getSeconds() + '').length === 2 ? today.getSeconds() : '0' + today.getSeconds();
+            const ampm = parseInt(hour) >= 12 ? 'PM' : 'AM';
 
-                // Replace based on the format.
-                format = format.replace('M', month);
-                format = format.replace('d', day);
-                format = format.replace('y', year);
-                format = format.replace('H', hour);
-                format = format.replace('h', hour12);
-                format = format.replace('m', minute);
-                format = format.replace('s', second);
-                format = format.replace('a', ampm);
+            // Replace based on the format.
+            format = format.replace('M', month);
+            format = format.replace('d', day);
+            format = format.replace('y', year);
+            format = format.replace('H', hour);
+            format = format.replace('h', hour12);
+            format = format.replace('m', minute);
+            format = format.replace('s', second);
+            format = format.replace('a', ampm);
 
-                // Show it in the element.
-                clock.innerHTML = format;
-            });
+            // Show it in the element.
+            clock.innerHTML = format;
         }
     }
 }
