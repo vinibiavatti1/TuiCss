@@ -1,6 +1,15 @@
 # TuiCss ChangeLog
 ### This is the change log of TuiCss. Here you can find the documentations of the feature of each released version
 
+#### 2.1.1
+
+Bugs
+- Fixed memory leak due to setinterval for clocks: https://github.com/vinibiavatti1/TuiCss/pull/29
+- Imported media queries classes to tuicss.scss: https://github.com/vinibiavatti1/TuiCss/issues/30
+
+Examples
+- Created the mobile example
+
 #### 2.1.0
 - .disabled classes
 - Fixed the default radius border of inputs

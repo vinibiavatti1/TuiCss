@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en" class="no-tui-scroll">
+
+<head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Example</title>
+    <script src="../dist/tuicss.min.js"></script>
+    <link rel="stylesheet" href="../dist/tuicss.min.css">
+    <style>
+        .content {
+            padding: 40px 0px;
+        }
+        .post-img {
+            width: 100%; 
+            border: 4px solid black;
+        }
+        .add-btn {
+            bottom: 0px; 
+            left: 0; 
+            right: 0;
+            margin-left: auto; 
+            margin-right: auto; 
+            z-index: 999;
+            width: 50px;
+            height: 50px;
+        }
+        .post {
+            margin-bottom: 5px;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body class="tui-bg-blue-black relative">
+	<!-- Sidenav -->
+	<nav class="tui-sidenav absolute">
+		<ul>
+			<li>
+				<a href="#!">
+					<span class="red-168-text">P</span>rofile
+					<span class="tui-shortcut">ctrl+p</span>
+				</a>
+			</li>
+			<li>
+				<a href="#!">
+					<span class="red-168-text">S</span>earch
+					<span class="tui-shortcut">ctrl+s</span>
+				</a>
+			</li>
+			<li>
+				<a href="#!">
+					S<span class="red-168-text">t</span>ory
+					<span class="tui-shortcut">ctrl+t</span>
+				</a>
+			</li>
+		</ul>
+	</nav>
+
+	<!-- Navbar -->
+	<nav class="tui-nav">
+		<span class="tui-datetime" data-format="h:m:s a"></span>
+		<ul>
+			<li class="tui-sidenav-button red-168-text">≡</li>
+			<li class="tui-dropdown hide-on-med-and-down">
+				<span class="red-168-text">P</span>rofile
+				<div class="tui-dropdown-content">
+					<ul>
+						<li>
+							<a href="#!">
+								<span class="red-168-text">A</span>vatar
+							</a>
+						</li>
+						<li>
+							<a href="#!">
+								P<span class="red-168-text">r</span>eferences
+								<span class="tui-shortcut">F3</span>
+							</a>
+						</li>
+						<li class="tui-dropdown block">
+							<span class="right">►</span>
+							<span class="red-168-text">M</span>ore
+							<div class="tui-dropdown-content">
+								<ul>
+									<li>
+										<a href="#!">
+											<span class="red-168-text">I</span>diom
+										</a>
+									</li>
+									<li>
+										<a href="#!">
+											<span class="red-168-text">B</span>locked Users
+										</a>
+									</li>
+								</ul>
+							</div>
+						</li>
+
+						<div class="tui-black-divider"></div>
+						<li>
+							<a href="#!">
+								<span class="red-168-text">S</span>tories
+								<span class="tui-shortcut">F10</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</li>
+			<li class="tui-dropdown hide-on-med-and-down">
+				<span class="red-168-text">H</span>elp
+			</li>
+		</ul>
+	</nav>
+
+	<!-- Edit panel -->
+	<div class="content container">
+        <div class="row">
+            <div class="col s12 m12 l12 white-text center">
+                <h3>InstaTui</h3>
+                <hr>
+                The best old-school social network<br>
+                <span class="orange-255 black-text hide-on-small-only">(Try this in a mobile view)</span>
+                <span class="green-255 black-text hide-on-med-and-up">(√ Mobile view)</span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12 m4 l4">
+                <div class="post tui-window">
+                    <fieldset class="tui-fieldset">
+                        John Due says:
+                        <hr>
+                        <img class="post-img" src="resources/winxp.png" />
+                        The winxp bg is amazing!
+                    </fieldset>
+                </div>
+            </div>
+            <div class="col s12 m4 l4">
+                <div class="post tui-window">
+                    <fieldset class="tui-fieldset">
+                        Jane Due says:
+                        <hr>
+                        <img class="post-img" src="resources/disks.png" />
+                        Bought my first 2 PC games!
+                    </fieldset>
+                </div>
+            </div>
+            <div class="col s12 m4 l4">
+                <div class="post tui-window">
+                    <fieldset class="tui-fieldset">
+                        Astronaut says:
+                        <hr>
+                        <img class="post-img" src="resources/step.png" />
+                        One small step for man one giant leap for mankind
+                    </fieldset>
+                </div>
+            </div>
+        </div>
+	</div>
+
+	<!-- Status bar -->
+	<div class="tui-statusbar fixed" style="bottom: 0px;">
+		<ul>
+            <li class="right" style="margin-right: 10px;"><a href="#!">Search</a></li>
+			<li><a href="#!">Profile</a></li>
+		</ul>
+	</div>
+
+    <button class="tui-button red-168 white-255-text fixed add-btn">+</button>
+</body>
+
+</html>
