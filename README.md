@@ -29,7 +29,7 @@ To start to use the TuiCss in your project, you can just download the repository
 $ npm install tuicss
 ```
 
-For more details, visit the [Getting Started Page](https://github.com/vinibiavatti1/TuiCss/wiki/Getting-Started) in the respoitory wiki.
+For more details, visit the [Getting Started Page](https://github.com/vinibiavatti1/TuiCss/wiki/Getting-Started) in the repository wiki.
 
 ### Documentation
 Check the [repository wiki](https://github.com/vinibiavatti1/TuiCss/wiki) to access the documentation, components index, examples, styles, or to know how to contribute for this project.
