@@ -29,3 +29,11 @@ Project Links:
 > Project Images: Images of the project (can be the images with legends, or the links to it).
 
 Project Images *:
+
+> Additional Information: Other relevant information.
+
+Additional Information: 
+
+> Feedback: If you want to give a feedback to the project, or a suggestion, please, enjoy this field!
+
+Feedback:
