@@ -117,7 +117,8 @@ function datetimeController() {
             // parse out the date and time into constants.
             const today  = new Date();
             const month  = (today.getMonth() + '').length === 2 ? today.getMonth() + 1 : '0' + (today.getMonth() + 1);
-            const day    = (today.getDay() + '').length === 2 ? today.getDay() + 1 : '0' + (today.getDay() + 1);
+            const day    = (today.getDate() + '').length === 2 ? today.getDate() + 1 : '0' + (today.getDate() + 1);
+            const dayOfWeek    = (today.getDay() + '').length === 2 ? today.getDay() + 1 : '0' + (today.getDay() + 1);
             const year   = today.getFullYear() + '';
             const hour   = (today.getHours() + '').length === 2 ? today.getHours() : '0' + today.getHours();
             const hour12 = (parseInt(hour) + 24) % '12' || '12';
@@ -128,6 +129,7 @@ function datetimeController() {
             // Replace based on the format.
             format = format.replace('M', month);
             format = format.replace('d', day);
+            format = format.replace('e', dayOfWeek);
             format = format.replace('y', year);
             format = format.replace('H', hour);
             format = format.replace('h', hour12);
