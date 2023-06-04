@@ -117,7 +117,7 @@ function datetimeController() {
             // parse out the date and time into constants.
             const today  = new Date();
             const month  = (today.getMonth() + '').length === 2 ? today.getMonth() + 1 : '0' + (today.getMonth() + 1);
-            const day    = (today.getDate() + '').length === 2 ? today.getDate() + 1 : '0' + (today.getDate() + 1);
+            const day    = (today.getDate() + '').length === 2 ? today.getDate() : '0' + today.getDate();
             const dayOfWeek    = (today.getDay() + '').length === 2 ? today.getDay() + 1 : '0' + (today.getDay() + 1);
             const year   = today.getFullYear() + '';
             const hour   = (today.getHours() + '').length === 2 ? today.getHours() : '0' + today.getHours();
