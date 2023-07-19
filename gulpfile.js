@@ -1,5 +1,6 @@
 const { series, src, dest } = require('gulp');
-const sass = require('gulp-sass');
+// const sass = require('gulp-sass');
+const sass = require('gulp-sass')(require('sass'));
 const gulpClean = require('gulp-clean');
 const gulpMinify = require('gulp-minify');
 const cleanCss = require('gulp-clean-css');
