@@ -115,16 +115,16 @@ function datetimeController() {
             let format = clock.getAttribute('data-format');
 
             // parse out the date and time into constants.
-            const today  = new Date();
-            const month  = (today.getMonth() + '').length === 2 ? today.getMonth() + 1 : '0' + (today.getMonth() + 1);
-            const day    = (today.getDate() + '').length === 2 ? today.getDate() : '0' + today.getDate();
-            const dayOfWeek    = (today.getDay() + '').length === 2 ? today.getDay() + 1 : '0' + (today.getDay() + 1);
-            const year   = today.getFullYear() + '';
-            const hour   = (today.getHours() + '').length === 2 ? today.getHours() : '0' + today.getHours();
-            const hour12 = (parseInt(hour) + 24) % '12' || '12';
-            const minute = (today.getMinutes() + '').length === 2 ? today.getMinutes() : '0' + today.getMinutes();
-            const second = (today.getSeconds() + '').length === 2 ? today.getSeconds() : '0' + today.getSeconds();
-            const ampm   = parseInt(hour) >= 12 ? 'PM' : 'AM';
+            const today     = new Date();
+            const month     = (today.getMonth() + 1).toString().padStart(2, '0');
+            const day       = today.getDate().toString().padStart(2, '0');
+            const dayOfWeek = (today.getDay() + 1).toString().padStart(2, '0');
+            const year      = today.getFullYear().toString();
+            const hour      = today.getHours().toString().padStart(2, '0');
+            const hour12    = (parseInt(hour) + 24) % '12' || '12';
+            const minute    = today.getMinutes().toString().padStart(2, '0');
+            const second    = today.getSeconds().toString().padStart(2, '0');
+            const ampm      = parseInt(hour) >= 12 ? 'PM' : 'AM';
 
             // Replace based on the format.
             format = format.replace('M', month);
